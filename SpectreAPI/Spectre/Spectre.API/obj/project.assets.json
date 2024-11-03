@@ -10345,11 +10345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
+      "projectUniqueName": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
       "projectName": "Spectre.API",
-      "projectPath": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
+      "projectPath": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
       "packagesPath": "C:\\Users\\m4tech\\.nuget\\packages\\",
-      "outputPath": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\obj\\",
+      "outputPath": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\m4tech\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -10373,8 +10373,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj": {
-              "projectPath": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj"
+            "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj": {
+              "projectPath": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj"
             }
           }
         }

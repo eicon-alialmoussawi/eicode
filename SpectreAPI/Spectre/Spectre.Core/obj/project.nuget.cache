@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bsOarUW2Slc=",
+  "dgSpecHash": "jL1O2DD2xbk=",
   "success": true,
-  "projectFilePath": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
+  "projectFilePath": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m4tech\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\m4tech\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
