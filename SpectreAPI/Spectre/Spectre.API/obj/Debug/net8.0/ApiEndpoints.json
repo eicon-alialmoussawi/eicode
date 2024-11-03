@@ -1,0 +1,2385 @@
+[
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "BenchmarkByRatio",
+    "RelativePath": "api/Award/BenchmarkByRatio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.ValuationBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "BenchmarkFiltering",
+    "RelativePath": "api/Award/BenchmarkFiltering",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.ValuationBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "Create",
+    "RelativePath": "api/Award/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Award",
+        "Type": "Spectre.Core.Models.Award",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "Delete",
+    "RelativePath": "api/Award/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "FilterAwards",
+    "RelativePath": "api/Award/Filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AwardsFilterBody",
+        "Type": "Spectre.Core.Models.Extenders.AwardsFilterBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "FilterPricing",
+    "RelativePath": "api/Award/FilterPricing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.Extenders.PricingFilterBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "FilterTrends",
+    "RelativePath": "api/Award/FilterTrends",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.Extenders.PricingFilterBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "FilterValuations",
+    "RelativePath": "api/Award/FilterValuations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.ValuationBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "GetAll",
+    "RelativePath": "api/Award/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "GetAllForView",
+    "RelativePath": "api/Award/GetAllForView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "GetById",
+    "RelativePath": "api/Award/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "PerformPermutation",
+    "RelativePath": "api/Award/GetDistancingResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "view",
+        "Type": "Spectre.Core.Models.Extenders.Distancing_PermutationView",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "GetFilterAwards",
+    "RelativePath": "api/Award/GetFilterAwards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "view",
+        "Type": "Spectre.Core.Models.Extenders.AwardFilter_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "Import",
+    "RelativePath": "api/Award/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Awards",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Award, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "ImportAwards",
+    "RelativePath": "api/Award/ImportAwards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Awards",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Extenders.AwardImportBody, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "RecalculateValuation",
+    "RelativePath": "api/Award/RecalculateValuation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.Extenders.Regression_Recalculate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.AwardController",
+    "Method": "RemoveAllAwards",
+    "RelativePath": "api/Award/RemoveAllAwards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "Create",
+    "RelativePath": "api/Bands/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Band",
+        "Type": "Spectre.Core.Models.Band",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "Delete",
+    "RelativePath": "api/Bands/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "DeleteBandById",
+    "RelativePath": "api/Bands/DeleteBandById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Bands/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "GetById",
+    "RelativePath": "api/Bands/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "RemoveAllBands",
+    "RelativePath": "api/Bands/RemoveAllBands",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BandsController",
+    "Method": "SaveBand",
+    "RelativePath": "api/Bands/SaveBand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "band",
+        "Type": "Spectre.Core.Models.Band",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BenchmarkController",
+    "Method": "Filter",
+    "RelativePath": "api/Bnechmark/Filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PricingFilterBody",
+        "Type": "Spectre.Core.Models.Extenders.PricingFilterBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPackageController",
+    "Method": "GetAll",
+    "RelativePath": "api/CompanyPackages/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPackageController",
+    "Method": "GetById",
+    "RelativePath": "api/CompanyPackages/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPackageController",
+    "Method": "GetExpiredCompanyPackages",
+    "RelativePath": "api/CompanyPackages/GetExpiredCompanyPackages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPackageController",
+    "Method": "SaveCompanyPackage",
+    "RelativePath": "api/CompanyPackages/SaveCompanyPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyView",
+        "Type": "Spectre.Core.Models.Extenders.CompanyPackage_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPackageController",
+    "Method": "UpdateCompanyPackage",
+    "RelativePath": "api/CompanyPackages/UpdateCompanyPackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyView",
+        "Type": "Spectre.Core.Models.Extenders.CompanyPackageDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPreRegistrationController",
+    "Method": "Delete",
+    "RelativePath": "api/CompanyPreRegistration/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPreRegistrationController",
+    "Method": "GetAll",
+    "RelativePath": "api/CompanyPreRegistration/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPreRegistrationController",
+    "Method": "GetDetailsWithId",
+    "RelativePath": "api/CompanyPreRegistration/GetDetailsWithId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPreRegistrationController",
+    "Method": "GetWithDetails",
+    "RelativePath": "api/CompanyPreRegistration/GetWithDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CompanyPreRegistrationController",
+    "Method": "SetAsViewed",
+    "RelativePath": "api/CompanyPreRegistration/SetAsViewed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ContactUsController",
+    "Method": "Delete",
+    "RelativePath": "api/ContactUs/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ContactUsController",
+    "Method": "GetAll",
+    "RelativePath": "api/ContactUs/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ContactUsController",
+    "Method": "SendReply",
+    "RelativePath": "api/ContactUs/SendReply",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reply",
+        "Type": "Spectre.Core.Models.Extenders.ReplyTo_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CountryController",
+    "Method": "GetAll",
+    "RelativePath": "api/Country/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CountryController",
+    "Method": "GetByCode",
+    "RelativePath": "api/Country/GetByCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CountryController",
+    "Method": "GetById",
+    "RelativePath": "api/Country/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CountryController",
+    "Method": "GetUserCountries",
+    "RelativePath": "api/Country/GetUserCountries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.CountryController",
+    "Method": "Import",
+    "RelativePath": "api/Country/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Countries",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Country, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FeatureController",
+    "Method": "Delete",
+    "RelativePath": "api/Features/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FeatureController",
+    "Method": "GetAll",
+    "RelativePath": "api/Features/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FeatureController",
+    "Method": "Save",
+    "RelativePath": "api/Features/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Feature",
+        "Type": "Spectre.Core.Models.Feature",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FQAController",
+    "Method": "Delete",
+    "RelativePath": "api/FQA/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FQAController",
+    "Method": "GetAll",
+    "RelativePath": "api/FQA/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.FQAController",
+    "Method": "Save",
+    "RelativePath": "api/FQA/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fqa",
+        "Type": "Spectre.Core.Models.Fqa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.GlossaryController",
+    "Method": "Delete",
+    "RelativePath": "api/Glossary/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.GlossaryController",
+    "Method": "GetAll",
+    "RelativePath": "api/Glossary/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.GlossaryController",
+    "Method": "Save",
+    "RelativePath": "api/Glossary/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Glossary",
+        "Type": "Spectre.Core.Models.Glossary",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HelpServiceController",
+    "Method": "GetAll",
+    "RelativePath": "api/HelpService/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HelpServiceController",
+    "Method": "Save",
+    "RelativePath": "api/HelpService/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HelpService",
+        "Type": "Spectre.Core.Models.HelpService",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HelpUsingController",
+    "Method": "Delete",
+    "RelativePath": "api/HelpUsing/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HelpUsingController",
+    "Method": "GetAll",
+    "RelativePath": "api/HelpUsing/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HelpUsingController",
+    "Method": "Save",
+    "RelativePath": "api/HelpUsing/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HelpUsing",
+        "Type": "Spectre.Core.Models.HelpUsing",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "DeleteSnap",
+    "RelativePath": "api/HomePage/DeleteSnap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetAboutUs",
+    "RelativePath": "api/HomePage/GetAboutUs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetFooter",
+    "RelativePath": "api/HomePage/GetFooter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetHelpAboutUs",
+    "RelativePath": "api/HomePage/GetHelpAboutUs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetReportSnaps",
+    "RelativePath": "api/HomePage/GetReportSnaps",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetServices",
+    "RelativePath": "api/HomePage/GetServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetVisualizing",
+    "RelativePath": "api/HomePage/GetVisualizing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "GetWelcome",
+    "RelativePath": "api/HomePage/GetWelcome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "SaveSnap",
+    "RelativePath": "api/HomePage/SaveSnap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "snap",
+        "Type": "Spectre.Core.Models.ReportSnap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateAbout",
+    "RelativePath": "api/HomePage/UpdateAbout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "about",
+        "Type": "Spectre.Core.Models.AboutSpectre",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdatedServices",
+    "RelativePath": "api/HomePage/UpdatedServices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "service",
+        "Type": "Spectre.Core.Models.Service",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateFooter",
+    "RelativePath": "api/HomePage/UpdateFooter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SpectreFooter",
+        "Type": "Spectre.Core.Models.SpectreFooter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateHelpAbout",
+    "RelativePath": "api/HomePage/UpdateHelpAbout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "about",
+        "Type": "Spectre.Core.Models.HelpAboutU",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateSnaps",
+    "RelativePath": "api/HomePage/UpdateSnaps",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "snap",
+        "Type": "Spectre.Core.Models.ReportSnap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateVisualizing",
+    "RelativePath": "api/HomePage/UpdateVisualizing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "report",
+        "Type": "Spectre.Core.Models.VisualizingReport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.HomePageController",
+    "Method": "UpdateWelcome",
+    "RelativePath": "api/HomePage/UpdateWelcome",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "welcome",
+        "Type": "Spectre.Core.Models.HomePageHeader",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.IconController",
+    "Method": "GetAll",
+    "RelativePath": "api/Icon/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LatestNewsController",
+    "Method": "Create",
+    "RelativePath": "api/LatestNews/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LatestNews",
+        "Type": "Spectre.Core.Models.LatestNews",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LatestNewsController",
+    "Method": "Delete",
+    "RelativePath": "api/LatestNews/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LatestNewsController",
+    "Method": "GetAll",
+    "RelativePath": "api/LatestNews/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LatestNewsController",
+    "Method": "GetById",
+    "RelativePath": "api/LatestNews/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "CheckTokeValidity",
+    "RelativePath": "api/Login/CheckTokeValidity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "GetAllExistingUsers",
+    "RelativePath": "api/Login/GetAllExistingUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "GetAllPerm",
+    "RelativePath": "api/Login/GetAllPerm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "GetIPAddress",
+    "RelativePath": "api/Login/GetIPAddress",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "GetLoginDetails",
+    "RelativePath": "api/Login/GetLoginDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "RenewUserToken",
+    "RelativePath": "api/Login/RenewUserToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LoginController",
+    "Method": "ValidateLogin",
+    "RelativePath": "api/Login/ValidateLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_LoginCredentials",
+        "Type": "Spectre.Core.Models.Extenders.LoginCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LogController",
+    "Method": "GetExceptions",
+    "RelativePath": "api/Logs/GetExceptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LookupController",
+    "Method": "Create",
+    "RelativePath": "api/Lookup/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Lookup",
+        "Type": "Spectre.Core.Models.Lookup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LookupController",
+    "Method": "GetAll",
+    "RelativePath": "api/Lookup/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LookupController",
+    "Method": "GetById",
+    "RelativePath": "api/Lookup/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LookupController",
+    "Method": "GetLookupByCode",
+    "RelativePath": "api/Lookup/GetLookupByCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spectre.Core.Models.Lookup, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.LookupController",
+    "Method": "GetLookupsByParantCode",
+    "RelativePath": "api/Lookup/GetLookupsByParantCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spectre.Core.Models.Lookup, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.NotificationController",
+    "Method": "GetAll",
+    "RelativePath": "api/Notifications/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.NotificationController",
+    "Method": "GetUnSeenNotifications",
+    "RelativePath": "api/Notifications/GetUnSeenNotifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.NotificationController",
+    "Method": "SendNotification",
+    "RelativePath": "api/Notifications/SendNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TextEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TextAr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TextFr",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.NotificationController",
+    "Method": "SetAsViewed",
+    "RelativePath": "api/Notifications/SetAsViewed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.NotificationController",
+    "Method": "SetUserNotificationAsSeen",
+    "RelativePath": "api/Notifications/SetUserNotificationAsSeen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PackageController",
+    "Method": "Delete",
+    "RelativePath": "api/Package/DeletePackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PackageController",
+    "Method": "GetAll",
+    "RelativePath": "api/Package/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PackageController",
+    "Method": "GetById",
+    "RelativePath": "api/Package/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PackageController",
+    "Method": "GetPackagePermissions",
+    "RelativePath": "api/Package/GetPackagePermissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PackageController",
+    "Method": "SavePackage",
+    "RelativePath": "api/Package/SavePackage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "package",
+        "Type": "Spectre.Core.Models.Extenders.Package_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PagesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Pages/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ParamController",
+    "Method": "GetAll",
+    "RelativePath": "api/Params/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ParamController",
+    "Method": "GetById",
+    "RelativePath": "api/Params/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.ParamController",
+    "Method": "Update",
+    "RelativePath": "api/Params/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ParamId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Value",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PermissionController",
+    "Method": "CheckIfUserCanView",
+    "RelativePath": "api/Permission/CheckIfUserCanView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PermissionController",
+    "Method": "GetAll",
+    "RelativePath": "api/Permission/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PermissionController",
+    "Method": "GetMenuPermissions",
+    "RelativePath": "api/Permission/GetMenuPermissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PermissionController",
+    "Method": "GetUserPermissions",
+    "RelativePath": "api/Permission/GetUserPermissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "GetAllPackages",
+    "RelativePath": "api/Public/GetAllPackages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "GetFooter",
+    "RelativePath": "api/Public/GetFooter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "GetHomePageContect",
+    "RelativePath": "api/Public/GetHomePageContect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "GetServices",
+    "RelativePath": "api/Public/GetServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "GetWelcome",
+    "RelativePath": "api/Public/GetWelcome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "SaveContactUs",
+    "RelativePath": "api/Public/SaveContactUs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Spectre.Core.Models.ContactU",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.PublicController",
+    "Method": "Create",
+    "RelativePath": "api/Public/SendRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CompanyPreRegistration",
+        "Type": "Spectre.Core.Models.CompanyPreRegistration",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RegionController",
+    "Method": "Create",
+    "RelativePath": "api/Region/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regionDetails",
+        "Type": "Spectre.Core.Models.Extenders.RegionDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RegionController",
+    "Method": "Delete",
+    "RelativePath": "api/Region/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RegionController",
+    "Method": "GetById",
+    "RelativePath": "api/Region/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RegionController",
+    "Method": "GetRegions",
+    "RelativePath": "api/Region/GetRegions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RegisterationRequestController",
+    "Method": "Create",
+    "RelativePath": "api/RegisterationRequest/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RegisterationRequest",
+        "Type": "Spectre.Core.Models.RegisterationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RoleController",
+    "Method": "Create",
+    "RelativePath": "api/Role/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Role",
+        "Type": "Spectre.Core.Models.Extenders.RoleResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RoleController",
+    "Method": "Delete",
+    "RelativePath": "api/Role/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RoleController",
+    "Method": "GetAll",
+    "RelativePath": "api/Role/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RoleController",
+    "Method": "GetAllExceptClient",
+    "RelativePath": "api/Role/GetAllExceptClient",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.RoleController",
+    "Method": "GetById",
+    "RelativePath": "api/Role/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "Create",
+    "RelativePath": "api/SocioEconomic/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SocioEonomic",
+        "Type": "Spectre.Core.Models.SocioEonomic",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "Delete",
+    "RelativePath": "api/SocioEconomic/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "DeleteAllSocioEcnomic",
+    "RelativePath": "api/SocioEconomic/DeleteAllSocioEcnomic",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "FilterSocioEconimcs",
+    "RelativePath": "api/SocioEconomic/FilterSocioEconimcs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryIds",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SourceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "FilterSocioEconimcsByCountry",
+    "RelativePath": "api/SocioEconomic/FilterSocioEconimcsByCountry",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "FilterSocioEconimcsByCountryId",
+    "RelativePath": "api/SocioEconomic/FilterSocioEconimcsByCountryId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsIMF",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "FilterSocioEconimcsByYear",
+    "RelativePath": "api/SocioEconomic/FilterSocioEconimcsByYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsIMF",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "GetAll",
+    "RelativePath": "api/SocioEconomic/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "GetAllForView",
+    "RelativePath": "api/SocioEconomic/GetAllForView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "GetByCountryAndYear",
+    "RelativePath": "api/SocioEconomic/GetByCountryAndYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ISIMF",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "GetById",
+    "RelativePath": "api/SocioEconomic/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SocioEonomicsController",
+    "Method": "Import",
+    "RelativePath": "api/SocioEconomic/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SocioEonomics",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Extenders.SocioEconomicImportView, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.StatisticController",
+    "Method": "GetTotalSales",
+    "RelativePath": "api/Statistics/GetForBarChart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.StatisticController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/Statistics/GetStatistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SsyetmSettingsController",
+    "Method": "Create",
+    "RelativePath": "api/SystemSettings/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SystemSettings",
+        "Type": "Spectre.Core.Models.SystemSetting",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SsyetmSettingsController",
+    "Method": "GetAll",
+    "RelativePath": "api/SystemSettings/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SsyetmSettingsController",
+    "Method": "GetById",
+    "RelativePath": "api/SystemSettings/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "AddFilterDetails",
+    "RelativePath": "api/TemplateFilter/AddFilterDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TemplateFilterDetail",
+        "Type": "Spectre.Core.Models.TemplateFilterDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "addFilterPricing",
+    "RelativePath": "api/TemplateFilter/addFilterPricing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TemplateFilterDetails",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.TemplateFilterDetail, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "AddListFilterDetails",
+    "RelativePath": "api/TemplateFilter/AddListFilterDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TemplateFilterDetails",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.TemplateFilterDetail, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "Create",
+    "RelativePath": "api/TemplateFilter/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TemplateFilter",
+        "Type": "Spectre.Core.Models.TemplateFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "Delete",
+    "RelativePath": "api/TemplateFilter/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "GetAll",
+    "RelativePath": "api/TemplateFilter/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "GetAllByPage",
+    "RelativePath": "api/TemplateFilter/GetAllByPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.TemplateFilterController",
+    "Method": "GetDetailsByFilterId",
+    "RelativePath": "api/TemplateFilter/GetDetailsByFilterId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "CheckIfUserIsAdmin",
+    "RelativePath": "api/User/CheckIfUserIsAdmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "api/User/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LoginUser",
+        "Type": "Spectre.Core.Models.Extenders.LoginUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/User/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "DeleteUsers",
+    "RelativePath": "api/User/DeleteUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "GetAllExistingUsers",
+    "RelativePath": "api/User/GetAllExistingUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/User/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "GetClientMenu",
+    "RelativePath": "api/User/GetClientMenu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "GetUserFeatures",
+    "RelativePath": "api/User/GetUserFeatures",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UserController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/User/GetUserInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SavedFilterController",
+    "Method": "GetDefault",
+    "RelativePath": "api/UserFilters/GetDefault",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SavedFilterController",
+    "Method": "GetUserFilters",
+    "RelativePath": "api/UserFilters/GetUserFilters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.SavedFilterController",
+    "Method": "SaveUserFilter",
+    "RelativePath": "api/UserFilters/SaveUserFilter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Extenders.SavedFilters_View, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.UtilityController",
+    "Method": "UploadFile",
+    "RelativePath": "api/Utility/UploadFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

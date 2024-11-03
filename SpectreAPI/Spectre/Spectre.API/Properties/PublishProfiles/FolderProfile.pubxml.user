@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\user\Desktop\spectre-dep-ionos\Spectre API</_PublishTargetUrl>
+    <History>True|2024-08-20T09:19:24.3415518Z;True|2024-08-20T10:39:50.8741326+03:00;True|2024-08-20T10:12:04.1851012+03:00;True|2024-08-20T09:43:55.8862122+03:00;True|2024-05-29T14:48:26.5562949+03:00;True|2024-05-16T11:25:20.3284835+03:00;True|2024-05-16T10:47:29.4814348+03:00;True|2024-05-14T09:28:42.3965934+03:00;False|2024-05-14T09:23:23.2635831+03:00;True|2024-05-13T18:24:57.8302741+03:00;True|2024-05-13T18:16:21.9304147+03:00;True|2024-05-13T17:10:10.6818476+03:00;True|2024-05-13T16:13:06.8967231+03:00;True|2024-05-13T15:18:07.9395602+03:00;True|2024-05-13T12:20:04.7189140+03:00;True|2024-05-13T11:50:23.4406784+03:00;True|2024-04-23T11:21:37.3283610+03:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=194.164.29.133,1433%3bDatabase=SpectreDBTest%3bUser Id=eicon%3bpassword=P%40ssw0rd1%3b Trusted_Connection=False%3bTrustServerCertificate=True%3bMultipleActiveResultSets=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\bin\Release\net8.0\Spectre.Core.deps.json
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\bin\Release\net8.0\Spectre.Core.runtimeconfig.json
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\bin\Release\net8.0\Spectre.Core.dll
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\bin\Release\net8.0\Spectre.Core.pdb
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.sourcelink.json
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.dll
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\refint\Spectre.Core.dll
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.pdb
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\Spectre.Core.genruntimeconfig.cache
+C:\Users\user\Desktop\projects\spectre\IDS\Spectre\Spectre\Spectre.Core\obj\Release\net8.0\ref\Spectre.Core.dll
