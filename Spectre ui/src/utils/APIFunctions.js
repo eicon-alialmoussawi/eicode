@@ -15,7 +15,13 @@ const GetMenuPermissions = () => {
 const getUserPermissions = (PageUrl) => {
   return http.get(`/Permission/GetUserPermissions?PageUrl=${PageUrl}`);
 };
-
+//BazAwards API
+const getAllBazAwards = () => {
+  return http.get("/BazAwards/GetAllBazAwards");
+};
+const getFilteredBazAwards = (data) =>{
+ return http.post("/BazAwards/GetFilteredBazAwards",data)
+};
 const getAllAwards = () => {
   return http.get("/Award/GetAllForView");
 };
@@ -595,9 +601,14 @@ const getUnSeenNotifications = () => {
 const getExceptionLogs = () => {
   return http.get("/Logs/GetExceptions");
 };
+const getOperators = () => {
+  return http.get("/Operator/GetAll");
+};
 
 
 const APIFunctions = {
+  getAllBazAwards,
+  getFilteredBazAwards,
   getExceptionLogs,
   setUserNotificationAsSeen,
   getUnSeenNotifications,
@@ -749,7 +760,8 @@ const APIFunctions = {
   saveRegion,
   updateRegion,
   getLoginDetails,
-  removeRegion
+  removeRegion,
+  getOperators
 };
 
 export default APIFunctions;

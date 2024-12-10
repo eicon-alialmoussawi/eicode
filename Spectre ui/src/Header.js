@@ -125,7 +125,7 @@ export default class Header extends Component {
           {/* Right navbar links */}
           <ul className="navbar-nav ml-auto">
             {" "}
-
+          
             <a className="nav-link" data-toggle="dropdown"
               style={{ paddingRight: "unset", paddingLeft: "unset" }} onClick={handleLogout}>
               <i className="fas fa-sign-out-alt" />

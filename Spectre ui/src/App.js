@@ -48,6 +48,7 @@ import HelpUsing from "./components/HelpUsing";
 import SendNotifications from "./components/SendNotifications";
 import ValuationsEcharts from "./components/ValuationsEcharts";
 import FQAView from "./components/FQAView";
+import AwardBase from "./components/AwardBase";
 import HelpAboutUs from "./components/HelpAboutUs";
 import ExceptionLogs from "./components/ExceptionLogs";
 import {
@@ -111,11 +112,12 @@ function App() {
                             <UserRoute exact path="/AwardsMenu" component={AwardsMenu} />
                             <UserRoute exact path="/Valuations" component={Valuations} />
                             <UserRoute exact path="/ValuationsEcharts" component={ValuationsEcharts} />
-                            <UserRoute exact path="/AwardsMenuTest" component={AwardsMenuTest} />
+                            <UserRoute exact path="/AwardsMenuTest" component={AwardBase} />
                             <UserRoute exact path="/Pricing" component={Pricing} />
                             <UserRoute exact path="/PricingTest" component={PricingTest} />
                             <UserRoute exact path="/Benchmark" component={Benchmark} />
                             <UserRoute exact path="/Default" component={Default} />
+                            <UserRoute exact path="/Test" component={AwardBase} />
                             <UserRoute
                                 exact path="/PublicSocioEconomics"
                                 component={PublicSocioEconomics}

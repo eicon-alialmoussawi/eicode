@@ -215,6 +215,7 @@ export default class Header extends Component {
                   <nav id="menu">
                     <ul id="menu-main-menu" className="menu menu-main">
                       {this.BindMenu()}{" "}
+
                       <li className="submenu">
                         <a>
                           {" "}
@@ -234,6 +235,11 @@ export default class Header extends Component {
                           <li className="sub">
                             <Link to="/GlossaryView">
                               {getValue("Glossary", getLang())}
+                            </Link>
+                          </li>
+                          <li className="sub">
+                            <Link to="/Test">
+                              Test
                             </Link>
                           </li>
                           <li className="sub">
