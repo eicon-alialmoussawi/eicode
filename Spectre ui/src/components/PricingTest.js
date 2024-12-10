@@ -235,7 +235,8 @@ const PricingTest = (props) => {
         if (awardTypeSelectedValue == 0) AwardFilter.uniqueAwards = true;
         else AwardFilter.uniqueAwards = false;
         AwardFilter.discountRate = discountRateValue;
-        AwardFilter.term = termValue;
+        AwardFilter.term = termValue*parseInt($("#currency").val());
+        console.log(parseInt($("#currency").val()));
         AwardFilter.AdjustByInflationFactor = adjustByInflation;
         AwardFilter.AdjustByGDPFactor = normalizeByGDPc;
         AwardFilter.AdjustByPPPFactor = adjustByPPPFactor;
@@ -565,7 +566,8 @@ const PricingTest = (props) => {
         if (awardTypeSelectedValue == 0) AwardFilter.uniqueAwards = true;
         else AwardFilter.uniqueAwards = false;
         AwardFilter.discountRate = discountRateValue;
-        AwardFilter.term = termValue;
+        AwardFilter.term = termValue*parseInt($("#currency").val());
+        console.log(parseInt($("#currency").val()));
         AwardFilter.AdjustByInflationFactor = adjustByInflation;
         AwardFilter.AdjustByGDPFactor = normalizeByGDPc;
         AwardFilter.AdjustByPPPFactor = adjustByPPPFactor;
@@ -1195,6 +1197,7 @@ const PricingTest = (props) => {
                     setFromDate(fromYear[0].value);
                     setToDate(toYear[0].value);
                     $('#issueDate').val(issueDate[0].value);
+                    $('#currency').val(1);
                     $('#showResults').val(awardTypeSelectedValue[0].value);
                     setDiscountRate(discountRate[0].value);
                     setTermValue(term[0].value);
@@ -1875,6 +1878,17 @@ const PricingTest = (props) => {
                                     value={discountRateValue}
                                     onChange={(e) => setDiscountRate(e.target.value)}
                                 />
+                            </label>
+                        </div>
+                        <div className="form-group">
+                            <label class="lbl-icon-left">
+                                <span style={{ width: 100 }}><i class="spectre-filters-license-year"></i> Currency</span>
+
+                                <select id="currency">
+                                    <option value="1">US</option>
+                                    <option value="2">EUR</option>
+                                    <option value="3">Pound</option>
+                                </select>
                             </label>
                         </div>
                     </div>

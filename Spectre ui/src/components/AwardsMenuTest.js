@@ -11,6 +11,7 @@ import * as FileSaver from 'file-saver';
 import * as XLSX from 'xlsx';
 import $ from 'jquery';
 import Awards2 from "./Awards2";
+import Selector from "./Selector";
 
 const AwardsMenuTest = (props) => {
 
@@ -18,17 +19,19 @@ const AwardsMenuTest = (props) => {
     const [checkAll, setCheckAll] = React.useState(false);
     const [singleBand, setSingleBand] = useState(true);
     const [multiBand, setMultiBand] = useState(false);
-    const [includeRegional, setIncludeRegional] = useState(false);
+    //const [includeRegional, setIncludeRegional] = useState(false);
     const [paired, setPaired] = useState(true);
     const [unPaired, setUnPaired] = useState(false);
     const [pairedUnpaired, setPairedUnPaired] = useState(false);
+    const [newItem, setNewItem] = useState(false);
     const [minGDP, setMinGDP] = useState();
     const [maxGDP, setMaxGDP] = useState();
     const [fromDate, setFromDate] = useState();
     const [toDate, setToDate] = useState();
     const [bandOptionsList, setSelectedBandsOptions] = useState([]);
-    const [options, setoptions] = useState([]);
     const [awards, setAwards] = useState([]);
+    const [operators, setOperators] = useState(null);
+    const [options, setoptions] = useState([]);
     const [showDisplay, setShowDisplay2] = useState(true);
     const [iconClass, setIconClass] = useState("spectre-angle-up btn btn-primary background-color-2 color-white mr-2");
     const [showTxt, setShowTxt] = useState(getValue("ShowLess", getLang()));
@@ -47,6 +50,7 @@ const AwardsMenuTest = (props) => {
     const [checkAllBands, setCheckAllBands] = useState(false);
 
     var _exportedFilters;
+    
     //const tableRef = useRef(null);
 
     useEffect(() => {
@@ -55,6 +59,22 @@ const AwardsMenuTest = (props) => {
             .then((resp) => bindOptions(resp.data))
             .then((resp) => getUserFilters());
     }, []);
+    useEffect(() => {
+        APIFunctions.getOperators("AwardsMenuTest")
+            .then((resp) => resp)
+            .then((resp) => {
+                var arr =[];
+               resp.data.forEach(element => {
+                arr.push({value:element.operatorID,label:element.operatorName});
+               
+               }
+            );
+            
+            setOperators(arr);
+            })
+            .then();
+    }, []);
+
 
     useEffect(() => {
         APIFunctions.getAllBands()
@@ -302,7 +322,7 @@ const AwardsMenuTest = (props) => {
         AwardFilter.IsPairedAndUnPaired = pairedUnpaired;
         AwardFilter.IsPaired = paired;
         AwardFilter.IsUnPaired = unPaired;
-        AwardFilter.RegionalLicense = includeRegional;
+        //AwardFilter.RegionalLicense = includeRegional;
         AwardFilter.MaxGDP = parseInt(maxGDP);
         AwardFilter.MinGDP = parseInt(minGDP);
         AwardFilter.MinGDP = parseInt(minGDP);
@@ -326,6 +346,11 @@ const AwardsMenuTest = (props) => {
 
 
     const checkIfCanSearch = () => {
+        if(newItem)
+        {
+            Alert("New Feature To Be Added");
+            return;
+        }
         APIFunctions.checkIfCanView("AwardsMenuTest")
             .then((response) => {
                 if (response.data) {
@@ -341,6 +366,11 @@ const AwardsMenuTest = (props) => {
                 console.log(e);
             });
     }
+    var selectedOperators =[];
+    const handleSelectionChange = (options) => {
+        selectedOperators = options;
+        console.log(selectedOperators);
+    };
 
     const selectAllBands = (evt) => {
 
@@ -458,31 +488,32 @@ const AwardsMenuTest = (props) => {
         }
 
         // Validations End
-
-        var AwardFilter = new Object();
+        
+        var AwardFilter = {};
         AwardFilter.Lang = getLang();
         AwardFilter.FromYear = parseInt(fromDate);
         AwardFilter.ToYear = parseInt(toDate);
         AwardFilter.IsPPP = getPPP() == "true" ? true : false;
         AwardFilter.IsIMF = getIMF() == "true" ? true : false;
         AwardFilter.CountryIds = selectedCountries.join(",");
+        AwardFilter.OperatorIds = selectedOperators;
         AwardFilter.IsSingle = singleBand;
         AwardFilter.IsMultiple = multiBand;
         AwardFilter.IsPairedAndUnPaired = pairedUnpaired;
         AwardFilter.IsPaired = paired;
         AwardFilter.IsUnPaired = unPaired;
-        AwardFilter.RegionalLicense = includeRegional;
+        //AwardFilter.RegionalLicense = includeRegional;
         AwardFilter.MaxGDP = parseInt(maxGDP);
         AwardFilter.MinGDP = parseInt(minGDP);
         AwardFilter.Band = selectedBands.join(",");
-
+       
 
         var list = [];
         list.push({ id: 0, pageUrl: "AwardsMenuTest", field: "MinGDP", value: minGDP.toString(), userId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "MaxGDP", value: maxGDP.toString(), userId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "FromYear", value: fromDate.toString(), userId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "ToYear", value: toDate.toString(), userId: 0 },
-            { id: 0, pageUrl: "AwardsMenuTest", field: "RegionalLicense", value: includeRegional.toString(), userId: 0 },
+            //{ id: 0, pageUrl: "AwardsMenuTest", field: "RegionalLicense", value: includeRegional.toString(), userId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "Paired", value: AwardFilter.IsPaired.toString(), userId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "IsUnPaired", value: AwardFilter.IsUnPaired.toString(), UserId: 0 },
             { id: 0, pageUrl: "AwardsMenuTest", field: "IsPairedAndUnPaired", value: AwardFilter.IsPairedAndUnPaired.toString(), userId: 0 },
@@ -565,7 +596,7 @@ const AwardsMenuTest = (props) => {
                     setPaired(paired[0].value == "true" ? true : false);
                     setUnPaired(unPaired[0].value == "true" ? true : false);
                     setPairedUnPaired(pairedUnpaired[0].value == "true" ? true : false);
-                    setIncludeRegional(regionalLicense[0].value == "true" ? true : false);
+                    //setIncludeRegional(regionalLicense[0].value == "true" ? true : false);
                     setMultiBand(multiple[0].value == "true" ? true : false);
                     setSingleBand(single[0].value == "true" ? true : false);
                     var tempBands = JSON.parse(bands[0].value);
@@ -857,6 +888,9 @@ const AwardsMenuTest = (props) => {
             e.preventDefault();
         }
     }
+    
+
+   
 
 
 
@@ -887,7 +921,7 @@ const AwardsMenuTest = (props) => {
                                         {getValue("MultiBand", getLang())}
                                     </label>
                                 </div>
-                                <div className="form-group">
+                               {/* <div className="form-group">
                                     <label style={{ alignItems: 'flex-start' }} className="chk-wrap">
                                         <input type="checkbox"
                                             value={includeRegional}
@@ -895,7 +929,7 @@ const AwardsMenuTest = (props) => {
                                             onChange={(e) => setIncludeRegional(e.target.checked)} />
                                         {getValue("RegionalLicenses", getLang())}
                                     </label>
-                                </div>
+                                </div>*/}
                             </div>
                             <div className="has-border-left ps-2 pe-2">
                                 <div className="form-group">
@@ -923,6 +957,15 @@ const AwardsMenuTest = (props) => {
                                             checked={pairedUnpaired}
                                             onChange={(e) => setPairedUnPaired(e.target.checked)} />
                                         {getValue("PairedUnpaired", getLang())}
+                                    </label>
+                                </div>
+                                <div className="form-group">
+                                    <label style={{ alignItems: 'flex-start' }} className="chk-wrap">
+                                        <input type="checkbox"
+                                            value={newItem}
+                                            checked={newItem}
+                                            onChange={(e) => setNewItem(e.target.checked)} />
+                                        {getValue("New Item", getLang())}
                                     </label>
                                 </div>
                             </div>
@@ -994,7 +1037,15 @@ const AwardsMenuTest = (props) => {
                             {renderBands()}
                         </div>
                     </div>
-                    <div data-title="">
+                    <div data-title="Operator">
+                    {operators &&
+                    <Selector
+                        label="Select Options"
+                        mode="multi" // or "single"
+                        options={operators}
+                         // Pass initial selected values
+                        onChange={handleSelectionChange}
+                        />}
 
                     </div>
                     <div data-title="">
@@ -1010,6 +1061,7 @@ const AwardsMenuTest = (props) => {
                 <div className="content_wrapper clearfix" style={{ paddingTop: 15, paddingBottom: 60 }}>
                     <div className="sections_group">
                         <div className="section_wrapper mcb-section-inner">
+                            
                             <div className="wrap mcb-wrap one valign-top clearfix">
                                 <div style={{ borderRadius: "10px" }} className="entry-content inner-entry-content px-4 py-3">
                                     <div className="row">

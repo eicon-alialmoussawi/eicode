@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
@@ -27,6 +26,7 @@ namespace Spectre.Core.Models
         //public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
         public virtual DbSet<AspnetPermission> AspnetPermissions { get; set; }
         public virtual DbSet<Award> Awards { get; set; }
+        public virtual DbSet<BazAward> BazAwards { get; set; }
         public virtual DbSet<Band> Bands { get; set; }
         public virtual DbSet<Banner> Banners { get; set; }
         public virtual DbSet<Company> Companies { get; set; }
@@ -35,6 +35,7 @@ namespace Spectre.Core.Models
         public virtual DbSet<CompanyPreRegistration> CompanyPreRegistrations { get; set; }
         public virtual DbSet<ContactU> ContactUs { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
+        public virtual DbSet<Operator> Operators { get; set; }
         public virtual DbSet<Region> Regions { get; set; }
         public virtual DbSet<ExceptionLog> ExceptionLogs { get; set; }
         public virtual DbSet<Feature> Features { get; set; }

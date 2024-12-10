@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using ClosedXML.Excel;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Spectre.API.Utilities;
 using Spectre.Core.Interfaces;
-
 using Spectre.Core.Models;
 using Spectre.Core.Models.Extenders;
 using Spectre.Core.RepositoryHandler;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Spectre.API.Controllers
 {
@@ -48,12 +46,13 @@ namespace Spectre.API.Controllers
         public readonly ICountryRepository ICountryRepository;
         public readonly ILookupRepository ILookupRepository;
         public readonly IScocioEconomicRepository IScocioEconomicRepository;
+        public readonly IOperatorRepository operatorRepository;
 
         [Obsolete]
         private readonly IHostingEnvironment _hostingEnvironment;
 
         [Obsolete]
-        public AwardController(IHostingEnvironment _hostingEnvironment, IScocioEconomicRepository IScocioEconomicRepository, IMapper mapper, ILogger ILogger, IAwardRepository IAwardRepository, ICountryRepository ICountryRepository, ILookupRepository ILookupRepository)
+        public AwardController(IHostingEnvironment _hostingEnvironment, IScocioEconomicRepository IScocioEconomicRepository, IMapper mapper, ILogger ILogger, IAwardRepository IAwardRepository, ICountryRepository ICountryRepository, ILookupRepository ILookupRepository, IOperatorRepository _operatorRepository)
         {
             this.IAwardRepository = IAwardRepository;
             this.ILookupRepository = ILookupRepository;
@@ -62,6 +61,7 @@ namespace Spectre.API.Controllers
             this.mapper = mapper;
             this.ILogger = ILogger;
             this._hostingEnvironment = _hostingEnvironment;
+            this.operatorRepository = _operatorRepository;
         }
 
         [HttpPost]
@@ -285,10 +285,15 @@ namespace Spectre.API.Controllers
 
             var Result = await this.IAwardRepository.FilterAwards2(AwardsFilterBody.Lang, AwardsFilterBody.ISPPP, AwardsFilterBody.ISIMF, AwardsFilterBody.FromYear, AwardsFilterBody.ToYear,
                 1, false, false, AwardsFilterBody.CountryIds, UserId);
-
+            if (!AwardsFilterBody.OperatorIds.IsNullOrEmpty())
+            {
+                var operators = await operatorRepository.GetAll();
+                var filteredOperators = operators.ToList().Where(o => AwardsFilterBody.OperatorIds.Contains(o.OperatorID));
+                Result = Result.Where(r => filteredOperators.Any(x => x.OperatorName == r.OperatorName));
+            }
             // If user doesnt select regional then we must get all non regional awardss
-            if (AwardsFilterBody.RegionalLicense == false)
-                Result = Result.Where(m => m.Regionalicense == false).ToList();
+            /* if (AwardsFilterBody.RegionalLicense == false)
+                 Result = Result.Where(m => m.Regionalicense == false).ToList();*/
 
             // if user selects single and multi band then we must double check that award band type has s or i or m
             if (AwardsFilterBody.IsSingle && AwardsFilterBody.IsMultiple)
@@ -419,7 +424,7 @@ namespace Spectre.API.Controllers
                     FinalResult.Add(AwardsFiltered);
                 }
 
-                if(AwardsFiltered.coverage == "Regional" && AwardsFilterBody.ISIMF == true)
+                if (AwardsFiltered.coverage == "Regional" && AwardsFilterBody.ISIMF == true)
                 {
                     AwardsFiltered.Pop = AwardsFiltered.Pop / 1000000;
                 }
@@ -452,7 +457,7 @@ namespace Spectre.API.Controllers
             try
             {
                 int numPoints = points.Count;
-                if(numPoints > 0)
+                if (numPoints > 0)
                 {
                     double meanX = points.Average(point => Convert.ToDouble(point.X));
                     double meanY = points.Average(point => Convert.ToDouble(point.Y));
@@ -517,7 +522,7 @@ namespace Spectre.API.Controllers
                 //  b = (a * meanX - meanY);
                 b = meanY - (a * meanX);
 
-                if (EnforceBPositive=="1")
+                if (EnforceBPositive == "1")
                 {
                     if (a > 0)
                     {
@@ -553,14 +558,14 @@ namespace Spectre.API.Controllers
                         Way = "Modified";
                         return points.Select(point => new XYPoint2() { X = point.X, Y = a1 * Convert.ToDouble(point.X) + b1, Id = point.Id, Price = point.Price }).ToList();
                     }
-                    
+
                 }
                 else if (EnforceBPositive == "0")
                 {
                     a1 = a;
                     b1 = b;
-                        Way = "Normal";
-                        return points.Select(point => new XYPoint2() { X = point.X, Y = a1 * Convert.ToDouble(point.X) + b1, Id = point.Id, Price = point.Price }).ToList();
+                    Way = "Normal";
+                    return points.Select(point => new XYPoint2() { X = point.X, Y = a1 * Convert.ToDouble(point.X) + b1, Id = point.Id, Price = point.Price }).ToList();
                 }
                 else
                 {
@@ -902,7 +907,7 @@ namespace Spectre.API.Controllers
                     item.bandCountry = item.CountryName + "-" + item.Band + "(" + item.Year + ")";
                     if (PricingFilterBody.ISIMF == true)
                     {
-                       // item.GDP = item.GDP * 1000;
+                        // item.GDP = item.GDP * 1000;
                         item.AwardPop = item.AwardPop / 1000000;
 
                     }
@@ -1040,7 +1045,7 @@ namespace Spectre.API.Controllers
                             decimal? population = Pop.Item2;
                             if (PricingFilterBody.ISIMF == false)
                             {
-                                population = population ==  null ? null : population / 1000000;
+                                population = population == null ? null : population / 1000000;
                             }
                             item.Pop = Convert.ToDouble(population);
                         }
@@ -1107,7 +1112,7 @@ namespace Spectre.API.Controllers
                             _Pop = _Pop / 1000000;
                         }
 
-                        double _FianlGDP = PricingFilterBody.ISIMF == true ? (double) GDP.Item2 * 1000 : (double)GDP.Item2;
+                        double _FianlGDP = PricingFilterBody.ISIMF == true ? (double)GDP.Item2 * 1000 : (double)GDP.Item2;
                         Country country = await ICountryRepository.GetById(Convert.ToInt32(PricingFilterBody.CountryId));
                         AwardsFiltered predicted = new AwardsFiltered();
                         predicted.Id = 0;
@@ -1116,7 +1121,7 @@ namespace Spectre.API.Controllers
                         predicted.Year = PricingFilterBody.IssueDate;
                         predicted.Price = (double)(_FianlGDP * (double)a) + (double)b;
                         predicted.GDP = (decimal)_FianlGDP;
-                        predicted.CountryName = PricingFilterBody.Lang  == "ar" ? country.NameAr : country.NameEn;
+                        predicted.CountryName = PricingFilterBody.Lang == "ar" ? country.NameAr : country.NameEn;
                         predicted.CountryId = Convert.ToInt32(PricingFilterBody.CountryId);
                         predicted.OperatorName = "";
                         predicted.Month = 0;
@@ -1510,11 +1515,11 @@ namespace Spectre.API.Controllers
                             item.Price = TotalPriceP;
                             item.PriceM = TotalPriceP;
                         }
-                        catch(Exception e)
+                        catch (Exception e)
                         {
 
                         }
-              
+
                     }
                 }
                 else
@@ -1553,11 +1558,11 @@ namespace Spectre.API.Controllers
                             item.Price = TotalPriceP;
                             item.PriceM = TotalPriceP;
                         }
-                        catch(Exception e)
+                        catch (Exception e)
                         {
 
                         }
-                     
+
                     }
                 }
 
@@ -1744,9 +1749,9 @@ namespace Spectre.API.Controllers
 
                     foreach (AwardsFiltered countryLowBand in tmpLowBands)
                     {
-                       
+
                         var lowVband = ValuatedCountryBands.Where(m => m.Band == countryLowBand.Band).OrderByDescending(m => m.Year).FirstOrDefault();
-                       
+
                         foreach (AwardsFiltered highBands in tmpHighBands)
                         {
                             Distancing_View tmpResult = new Distancing_View();
@@ -2041,9 +2046,9 @@ namespace Spectre.API.Controllers
                 }
                 if (view.AutoFiltering == true)
                 {
-                  List<AwardsFiltered> SortedList = AwardsFiltered.OrderBy(o => o.PriceForFilter).ToList();
-                        double MaxPosition = (double)((0.75) * (double)AwardsFiltered.Count());
-                        double MinPosition = (double)(0.25) * (double)AwardsFiltered.Count();
+                    List<AwardsFiltered> SortedList = AwardsFiltered.OrderBy(o => o.PriceForFilter).ToList();
+                    double MaxPosition = (double)((0.75) * (double)AwardsFiltered.Count());
+                    double MinPosition = (double)(0.25) * (double)AwardsFiltered.Count();
 
                     int MinInd = Convert.ToInt32(Math.Floor(MinPosition));
                     int MaxInd = Convert.ToInt32(Math.Ceiling(MaxPosition));
@@ -2191,7 +2196,7 @@ namespace Spectre.API.Controllers
 
                     if (model.ISIMF == true)
                     {
-                      //  item.GDP = item.GDP * 1000;
+                        //  item.GDP = item.GDP * 1000;
                         item.AwardPop = item.AwardPop / 1000000;
 
                     }
@@ -2246,7 +2251,7 @@ namespace Spectre.API.Controllers
                     {
                         if (model.DiscountRate == 0)
                             item.Price = item.Price / Convert.ToDouble(item.Terms);
-                        else 
+                        else
                             item.Price = item.Price * (model.DiscountRate / 100) * (1 / (1 - (1 / (Math.Pow((1 + model.DiscountRate / 100), model.Term)))));
                     }
                     if (model.AdjustByGDPFactor)
@@ -2485,7 +2490,7 @@ namespace Spectre.API.Controllers
 
                 Result = AveregedList;
             }
-                
+
             return Result;
         }
 
@@ -2623,15 +2628,15 @@ namespace Spectre.API.Controllers
 
             Result = PerformAdjustments(Result.ToList(), model);
 
-            Result = Result.Where(m => m.Price != double.PositiveInfinity ).ToList();
+            Result = Result.Where(m => m.Price != double.PositiveInfinity).ToList();
 
 
             Result = PerformAveraging(Result.ToList(), PricingFilterBody.AverageAwards, PricingFilterBody.AverageSumPricesAndMHZ, PricingFilterBody.SumBand, PricingFilterBody.ISIMF);
-            
+
             Result = Result.Where(m => (m.Pop > 0 || m.AwardPop > 0) && (m.GDP > 0 && m.GDP != null)
             && (m.Price != double.PositiveInfinity)).ToList();
 
-           // Result = Result.Where(m => m.Price != null && m.Price != double.PositiveInfinity).ToList();
+            // Result = Result.Where(m => m.Price != null && m.Price != double.PositiveInfinity).ToList();
 
             if (PricingFilterBody.AverageAwards || PricingFilterBody.AverageSumPricesAndMHZ)
             {
@@ -2756,7 +2761,8 @@ namespace Spectre.API.Controllers
         public async Task<IActionResult> BenchmarkByRatio(ValuationBody PricingFilterBody)
         {
             List<Benchmark_View> benchMarkResult = new List<Benchmark_View>();
-            try { 
+            try
+            {
                 var TokenClaims = HttpContext.User;
                 int UserId = int.Parse(TokenClaims.Claims.FirstOrDefault(c => c.Type == "UserId").Value);
 
@@ -2856,7 +2862,7 @@ namespace Spectre.API.Controllers
                 Result = Result.Where(m => (m.Pop > 0 || m.AwardPop > 0) && (m.GDP > 0 && m.GDP != null)
                     && (m.Price != double.PositiveInfinity && m.Price != 0)).ToList();
 
-            
+
                 foreach (AwardsFiltered item in Result)
                 {
                     if (benchMarkResult.Where(m => m.Band == item.Band).ToList().Count() == 0)
@@ -2896,7 +2902,7 @@ namespace Spectre.API.Controllers
                         int numberCount = tmpList.Count();
                         int halfIndex = tmpList.Count() / 2;
                         var sortedList = tmpList.OrderBy(n => n.Price);
-                        if(sortedList.Count() > 0)
+                        if (sortedList.Count() > 0)
                         {
                             if ((numberCount % 2) == 0)
                             {
@@ -2909,7 +2915,7 @@ namespace Spectre.API.Controllers
                                 median = sortedList.ElementAt(halfIndex).Price;
                             }
                         }
-                        
+
                         Benchmark_View _view = new Benchmark_View();
                         _view.Band = item.Band;
                         _view.Avalue = 0;
@@ -2918,7 +2924,7 @@ namespace Spectre.API.Controllers
                         _view.NumberOfAwards = tmpList.Count();
                         _view.ssot = 0;
                         _view.RSQ = 0;
-                       _view.mean = mean == null ? 0 : (double)mean;
+                        _view.mean = mean == null ? 0 : (double)mean;
                         _view.median = median == null ? 0 : (double)median;
 
                         benchMarkResult.Add(_view);
@@ -2926,9 +2932,9 @@ namespace Spectre.API.Controllers
 
                 }
 
-                    ///  benchMarkResult = benchMarkResult.Where(m => m.NumberOfAwards > 3).ToList();
+                ///  benchMarkResult = benchMarkResult.Where(m => m.NumberOfAwards > 3).ToList();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
             }
@@ -2958,8 +2964,8 @@ namespace Spectre.API.Controllers
         [Route("RecalculateValuation")]
         public async Task<IActionResult> RecalculateValuation(Regression_Recalculate PricingFilterBody)
         {
-            
-            List <AwardsFiltered> Result = PricingFilterBody.AwardsFiltered;
+
+            List<AwardsFiltered> Result = PricingFilterBody.AwardsFiltered;
 
             List<XYPoint2> points = new List<XYPoint2>();
             foreach (AwardsFiltered PricingFiltered in Result)
@@ -3036,13 +3042,13 @@ namespace Spectre.API.Controllers
                 return Ok(lst);
 
             }
-        
+
             else
             {
                 List<AwardsFiltered> Result2 = new List<AwardsFiltered>();
                 return Ok(Result2);
             }
-                
+
         }
 
         [HttpPost]
@@ -3142,7 +3148,7 @@ namespace Spectre.API.Controllers
                 }
             }
 
-          
+
             Result = Result.Where(m => m.Price != double.PositiveInfinity && m.Price != 0).ToList();
 
             Result = Result.Where(m => (m.Pop > 0 || m.AwardPop > 0) && (m.GDP > 0 && m.GDP != null)

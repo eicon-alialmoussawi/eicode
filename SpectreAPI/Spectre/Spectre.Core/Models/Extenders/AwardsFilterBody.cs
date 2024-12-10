@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Spectre.Core.Models.Extenders
 {
@@ -20,6 +16,7 @@ namespace Spectre.Core.Models.Extenders
         public int ToYear { set; get; }
         public int MaxGDP { set; get; }
         public int MinGDP { set; get; }
+        public List<int> OperatorIds { set; get; }
         public string CountryIds { set; get; }
         public string Band { set; get; }
         public int SourceId { set; get; }
