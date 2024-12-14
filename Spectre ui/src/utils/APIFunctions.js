@@ -15,6 +15,9 @@ const GetMenuPermissions = () => {
 const getUserPermissions = (PageUrl) => {
   return http.get(`/Permission/GetUserPermissions?PageUrl=${PageUrl}`);
 };
+const getAllBazAuctions = () => {
+  return http.get("/BazAuction/GetAll");
+};
 //BazAwards API
 const getAllBazAwards = () => {
   return http.get("/BazAwards/GetAllBazAwards");
@@ -607,6 +610,7 @@ const getOperators = () => {
 
 
 const APIFunctions = {
+  getAllBazAuctions,
   getAllBazAwards,
   getFilteredBazAwards,
   getExceptionLogs,

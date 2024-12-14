@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace Spectre.Core.Models
+﻿namespace Spectre.Core.Models
 {
     public class BazAward
     {
@@ -10,7 +8,7 @@ namespace Spectre.Core.Models
         public decimal Term_Y { get; set; }
         public string Group { get; set; }
         public int BANDS { get; set; }
-        public BigInteger Pop { get; set; }
+        public int Pop { get; set; }
         public int Block_MHz { get; set; }
         public float Price_mUSD { get; set; }
         public int AuctionId { get; set; }

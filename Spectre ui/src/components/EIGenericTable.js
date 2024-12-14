@@ -89,6 +89,13 @@ const EIGenericTable = ({tabletitle,onReady,columnsDetails,itemToExportMapping})
     var api ={};
     api.load = function(data){
         setData(data);
+        /*var element = document.getElementById("table-content");
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+        });*/
+        
     };
     React.useEffect(() => {
         if (typeof onReady === 'function') {

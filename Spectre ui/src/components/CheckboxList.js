@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef} from "react";
 import { getValue } from "../Assets/Language/Entries";
 import { getLang } from "../utils/common";
-
+var  updatedItems=[] ;
 const ScrollableCheckboxList = ({
   data,
   onReady,
@@ -27,7 +27,8 @@ const ScrollableCheckboxList = ({
   const handleCheckAll = (isChecked) => {
     setCheckAll(isChecked);
     if (isChecked) {
-      setCheckedItems(filteredData.map((item) => item[idName])); // Select all filtered items
+      updatedItems = filteredData.map((item) => item[idName]);
+      setCheckedItems(updatedItems); // Select all filtered items
     } else {
       setCheckedItems([]); // Deselect all items
     }
@@ -36,7 +37,7 @@ const ScrollableCheckboxList = ({
   // Handle individual checkbox change
   const handleCheck = (id, isChecked) => {
     setCheckedItems((prevState) => {
-      const updatedItems = isChecked
+       updatedItems = isChecked
         ? [...prevState, id] // Add to checked list
         : prevState.filter((item) => item !== id); // Remove from checked list
       console.log(updatedItems);
@@ -70,12 +71,12 @@ const ScrollableCheckboxList = ({
   };
 
   // Provide the API with the current selected items
-  const api = {
-    getSelectedValues: () => checkedItems, // Return the selected item ids
-  };
+  const apiRef = useRef({
+    getSelectedValues: () => updatedItems, // Initially returns an empty array
+  });
 
   useEffect(() => {
-    onReady(api); // Notify parent component about the API once component is ready
+    onReady(apiRef); // Notify parent component about the API once component is ready
   }, []);
 
   return (

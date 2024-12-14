@@ -13,6 +13,11 @@ namespace Spectre.API.Controllers
     public class BazAwardController : Controller
     {
         private readonly IBazAwardRepository IBazAwardRepository;
+        public BazAwardController(IBazAwardRepository bazAwardRepository)
+        {
+            IBazAwardRepository = bazAwardRepository;
+
+        }
         [HttpPost]
         [Route("GetFilteredBazAwards")]
         public async Task<IActionResult> GetFilteredBazAwards(BazAwardFilter_View view)
