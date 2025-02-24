@@ -8,5 +8,6 @@ namespace Spectre.Core.Models.Extenders
         public List<int> Regions { get; set; }
         public List<int> Counties { get; set; }
         public List<int> States { get; set; }
+        public List<int> Licenses { get; set; }
     }
 }

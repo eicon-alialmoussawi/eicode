@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Spectre.Core.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Spectre.Core.Interfaces
 {
-    internal interface IBazRegionRepository
+    public interface IBazRegionRepository
     {
+        Task<IEnumerable<BazRegion>> GetAll();
+        Task<BazRegion> GetById(int id);
+        Task<Tuple<bool, BazRegion>> Create(BazRegion _operator);
     }
 }

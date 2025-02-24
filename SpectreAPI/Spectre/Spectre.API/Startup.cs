@@ -69,8 +69,15 @@ namespace Spectre.API
             services.AddTransient<IPermissionRepository, PermissionRepository>();
             services.AddScoped<IScocioEconomicRepository, ScocioEconomicRepository>();
             services.AddScoped<IAwardRepository, AwardRepository>();
+            services.AddScoped<IBazAwardRepository, BazAwardRepository>();
+            services.AddScoped<IMapDataRepository, MapDataRepository>();
             services.AddTransient<ICountryRepository, CountryRepository>();
             services.AddTransient<IOperatorRepository, OperatorRepository>();
+            services.AddTransient<IBazRegionRepository, BazRegionRepository>();
+            services.AddTransient<IBazLicenseRepository, BazLicenseRepository>();
+            services.AddTransient<IBazStateRepository, BazStateRepository>();
+            services.AddTransient<IBazCountyRepository, BazCountyRepository>();
+            services.AddTransient<IBazAuctionRepository, BazAuctionRepository>();
             services.AddTransient<ILatestNewsRepository, LatestNewsRepository>();
             services.AddTransient<ISystemSettingsRepository, SystemSettingsRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();

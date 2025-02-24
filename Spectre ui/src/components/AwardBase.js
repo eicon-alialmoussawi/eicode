@@ -1,19 +1,18 @@
-import React, { useState, useCallback,useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import APIFunctions from "../utils/APIFunctions";
 import { trackPromise } from "react-promise-tracker";
 import BazSelector from "./BazSelector";
 import FilterContainer from "./FilterContainer";
 import ScrollableCheckboxList from "./CheckboxList";
+import CheckboxModal from "./CheckboxModal";
 import EIGenericTable from "./EIGenericTable";
 import { Alert, LoadingAlert, AlertError } from "../components/f_Alerts";
-
-
 
 // Table columns
 const columnsDetails = [
   { Header: "Auction NO.", accessor: "auctionNumber" },
   { Header: "Year", accessor: "year" },
-  { Header: "Operator", accessor: "operator" },
+  { Header: "Operator", accessor: "operator",className: "align-left" },
   { Header: "Term", accessor: "term_Y" },
   { Header: "Group", accessor: "group" },
   { Header: "Band", accessor: "band" },
@@ -37,105 +36,204 @@ const itemToExportMapping = (val) => ({
 });
 
 const ParentComponent = () => {
-  var auctionCheckBoxAPI;
-  var tableApi;
+  // Refs for API components
+  const auctionCheckBoxAPI = useRef(null);
+  const regionCheckBoxAPI = useRef(null);
+  const stateCheckBoxAPI = useRef(null);
+  const countyCheckBoxAPI = useRef(null);
+  const licenseCheckBoxAPI = useRef(null);
+  const tableApi = useRef(null);
+
   const [isLoadingFilters, setIsLoadingFilters] = useState(true);
   const [auctions, setAuctions] = useState([]);
+  const [licenses, setLicenses] = useState([]);
   const [awards, setAwards] = useState([]);
+  const [regions, setRegions] = useState([]);
+  const [counties, setCounties] = useState([]);
+  const [states, setStates] = useState([]);
+  const [locationBy, setLocationBy] = useState("Region");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMarketModalOpen, setIsMarketModalOpen] = useState(false); // Modal state
+  const [licenseSelectedValues, setLicenseSelectedValues] = useState([]);
+
+
+  const openMarketModal = () => {
+    setLicenseSelectedValues(licenseCheckBoxAPI.current?.current.getSelectedValues() || []);
+    setIsMarketModalOpen(true);
+  };
+  const handleMarketModalSave = (selectedValues) => {
+    setLicenseSelectedValues(selectedValues);
+    if (licenseCheckBoxAPI.current) {
+      licenseCheckBoxAPI.current.current.setSelectedValues(selectedValues); // Update outer CheckboxList
+    }
+  };
+
   const handleSave = (selectedOption) => {
     console.log(`User selected: ${selectedOption}`);
-    // Add custom logic (e.g., update state, make API call, etc.)
+    setLocationBy(selectedOption);
   };
-  const loadAwards = function(payload)
-  {
-    return APIFunctions.getFilteredBazAwards(payload) 
+
+  const loadAwards = function (payload) {
+    return APIFunctions.getFilteredBazAwards(payload);
   };
-  useEffect(() => {
-    // Simulate filter loading time
-    const timer = setTimeout(() => {
-      setIsLoadingFilters(false); // Set loading to false after some time
-    }, 2000); // Adjust time as needed
-
-    return () => clearTimeout(timer); // Cleanup timer
-  }, []);
-
-  // Stabilized function for handling checkbox API readiness
-  const handleCheckboxApiReady = useCallback((api) => {
-    console.log("Checkbox API is ready:", api);
-    auctionCheckBoxAPI = api;
-  }, []);
-
-  // Stabilized function for handling table API readiness
-  const handleTableApiReady = useCallback((api) => {
-    console.log("Table API is ready:", api);
-    tableApi = api;
-  }, []);
 
   // Handle search action
   const handleSearch = useCallback(() => {
-    LoadingAlert("Show");
-    var filter = {};
-    filter.AuctionIds = auctionCheckBoxAPI.current.getSelectedValues();
-    trackPromise(
-      loadAwards(filter)
-      .then(function(resp){
-        console.log(resp.data)
-        setAwards(resp.data);
-        tableApi.load(resp.data);
-        LoadingAlert("hide");
-      })
-      .catch((e) => {
-        LoadingAlert("hide");
-        console.log(e);
-    })
-    )
-  }, []);
-  useEffect(() => {
-    APIFunctions.getAllBazAuctions()
-        .then((resp) =>{ console.log(resp);
-          setAuctions(resp.data);
-        })
-       
-}, []);
+    
+    console.log("Current Auction API:", auctionCheckBoxAPI.current);
 
+    const filter = {
+        AuctionIds: auctionCheckBoxAPI.current?.current.getSelectedValues() || [],
+        Licenses: licenseCheckBoxAPI.current?.current.getSelectedValues() || [],
+    };
+
+    // Add region/state/county selection based on locationBy
+    if (locationBy === "Region") {
+        filter.Regions = regionCheckBoxAPI.current?.current.getSelectedValues() || [];
+    } else if (locationBy === "State") {
+        filter.States = stateCheckBoxAPI.current?.current.getSelectedValues() || [];
+    } else if (locationBy === "County") {
+        filter.Counties = countyCheckBoxAPI.current?.current.getSelectedValues() || [];
+    }
+
+    // Check if any filter is an empty array
+    const emptyFilters = Object.entries(filter).filter(([key, value]) => Array.isArray(value) && value.length === 0);
+
+    if (emptyFilters.length > 0) {
+        const emptyFilterNames = emptyFilters.map(([key]) => key).join(", ");
+        Alert(`The following filters are empty: ${emptyFilterNames}`);
+       
+        console.log(`The following filters are empty: ${emptyFilterNames}`);
+        return;
+    }
+    LoadingAlert("Show");
+
+    // Proceed with API call if all filters are valid
+    trackPromise(
+        loadAwards(filter)
+            .then((resp) => {
+                console.log(resp.data);
+                setAwards(resp.data);
+                if (tableApi.current) {
+                  tableApi.current.load(resp.data);
+                }
+                
+                LoadingAlert("hide");
+            })
+            .catch((e) => {
+                LoadingAlert("hide");
+                console.error(e);
+            })
+    );
+}, [locationBy]);
+
+
+  useEffect(() => {
+    setIsLoadingFilters(true); // Start loading
+    Promise.all([
+      APIFunctions.getAllBazAuctions(),
+      APIFunctions.getAllBazRegions(),
+      APIFunctions.getAllBazCounties(),
+      APIFunctions.getAllBazStates(),
+      APIFunctions.getAllBazLicense()
+    ])
+      .then(([auctionsResp, regionsResp, countiesResp, statesResp,licensesResp]) => {
+        setAuctions(auctionsResp.data);
+        setRegions(regionsResp.data);
+        setCounties(countiesResp.data);
+        setStates(statesResp.data);
+        setLicenses(licensesResp.data);
+      })
+      .catch((error) => {
+        console.error("Error loading filters:", error);
+      })
+      .finally(() => {
+        setIsLoadingFilters(false);
+      });
+  }, []);
 
   return (
-    <div style={{ overflowY: 'auto', height: '100vh' }}>
-        <FilterContainer onSearch={handleSearch}>
+    <div style={{ overflowY: "auto", height: "100vh" }}>
+      <FilterContainer onSearch={handleSearch}>
         {isLoadingFilters ? (
           <div style={{ textAlign: "center", padding: "20px" }}>
-            <span>Loading filters...</span> {/* Replace with a spinner if desired */}
+            <span>Loading filters...</span>
           </div>
         ) : (
           <div style={{ display: "flex", flexDirection: "row", gap: "1px" }}>
-          <div
-            data-title="Auctions"
-            style={{
-              cursor: "pointer",
-              flex: "1", // Flex the div itself, not the content inside
-              minWidth: "250px", 
-              borderRight: "2px solid #ccc",// Prevents the div from shrinking too much
-            }}
-          >
+            <div
+              data-title="Auction"
+              style={{
+                flex: "1",
+                minWidth: "250px",
+                borderRight: "2px solid #ccc",
+              }}
+            >
+              <ScrollableCheckboxList
+                data={auctions}
+                onReady={(api) => (auctionCheckBoxAPI.current = api)}
+                labelName="name"
+                idName="id"
+              />
+            </div>
+            <div
+              data-title={locationBy}
+              onClick={(e) => {
+                if (e.target !== e.currentTarget) {
+                  return;
+                }
+                setIsModalOpen(true);
+              }}
+              style={{
+                flex: "1",
+                cursor: "pointer",
+                minWidth: "250px",
+                borderRight: "2px solid #ccc",
+              }}
+            >
+              {locationBy === "Region" && (
+                <ScrollableCheckboxList
+                  data={regions}
+                  onReady={(api) => (regionCheckBoxAPI.current = api)}
+                  labelName="name"
+                  idName="id"
+                />
+              )}
+              {locationBy === "State" && (
+                <ScrollableCheckboxList
+                  data={states}
+                  onReady={(api) => (stateCheckBoxAPI.current = api)}
+                  labelName="name"
+                  idName="id"
+                />
+              )}
+              {locationBy === "County" && (
+                <ScrollableCheckboxList
+                  data={counties}
+                  onReady={(api) => (countyCheckBoxAPI.current = api)}
+                  labelName="name"
+                  idName="id"
+                />
+              )}
+            </div>
+            <div data-title="Market"   onClick={(e) => {
+                if (e.target !== e.currentTarget) {
+                  return;
+                }
+                openMarketModal();
+              }}  style={{
+                flex: "1",
+                minWidth: "250px",
+                borderRight: "2px solid #ccc",
+              }}>
             <ScrollableCheckboxList
-              data={auctions}
-              onReady={handleCheckboxApiReady}
-              labelName="name"
-              idName="id"
-            />
+                  data={licenses}
+                  onReady={(api) => (licenseCheckBoxAPI.current = api)}
+                  labelName="name"
+                  idName="id"
+                />
+            </div>
           </div>
-          <div
-            data-title="Countries"
-            onClick={() => setIsModalOpen(true)}
-            style={{
-              flex: "1", // Flex this div similarly
-              minWidth: "150px", // Prevents shrinking too much
-            }}
-          >
-            Hello
-          </div>
-        </div>
         )}
       </FilterContainer>
 
@@ -147,7 +245,7 @@ const ParentComponent = () => {
           <div className="sections_group">
             <EIGenericTable
               tabletitle="Country Statistics Table"
-              onReady={handleTableApiReady}
+              onReady={(api) => (tableApi.current = api)}
               columnsDetails={columnsDetails}
               itemToExportMapping={itemToExportMapping}
             />
@@ -155,11 +253,21 @@ const ParentComponent = () => {
         </div>
       </div>
       <BazSelector
-  isOpen={isModalOpen}
-  onClose={() => setIsModalOpen(false)}
-  options={["Region", "States", "Counties"]} // Options for the user to select
-  onSave={handleSave} // Function to handle the selected option
-/>
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        options={["Region", "State", "County"]} // Options for the user to select
+        onSave={handleSave}
+      />
+       <CheckboxModal
+        isOpen={isMarketModalOpen}
+        onClose={() => setIsMarketModalOpen(false)}
+        options={licenses}
+        labelName="name"
+        idName="id"
+        onSave={handleMarketModalSave}
+        title="Market"
+        defaultSelectedValues={licenseSelectedValues}
+      />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using Spectre.Core.Interfaces;
 using Spectre.Core.Models;
 using Spectre.Core.Models.Extenders;
@@ -64,10 +65,11 @@ namespace Spectre.Core.Repositories
                 {
                     Connection.Open();
                     var Params = new DynamicParameters();
-                    Params.Add("@RegionIds", view.Regions != null ? string.Join(",", view.Regions) : null);
-                    Params.Add("@StatesId", view.States != null ? string.Join(",", view.States) : null);
-                    Params.Add("@CountiesId", view.Counties != null ? string.Join(",", view.Counties) : null);
-                    Params.Add("@AuctionIds", view.AuctionIds != null ? string.Join(",", view.AuctionIds) : null);
+                    Params.Add("@RegionIds", !view.Regions.IsNullOrEmpty() ? string.Join(",", view.Regions) : null);
+                    Params.Add("@StatesId", !view.States.IsNullOrEmpty() ? string.Join(",", view.States) : null);
+                    Params.Add("@CountiesId", !view.Counties.IsNullOrEmpty() ? string.Join(",", view.Counties) : null);
+                    Params.Add("@AuctionIds", !view.AuctionIds.IsNullOrEmpty() ? string.Join(",", view.AuctionIds) : null);
+                    Params.Add("@LicenseIds", !view.Licenses.IsNullOrEmpty() ? string.Join(",", view.Licenses) : null);
 
                     var results = await Connection.QueryAsync<BazAwardView>(
                         "GetFilteredBazAwards",

@@ -58,3 +58,6 @@
   font-weight: bold;
   color: hsl(0, 0%, 98%);
 }
+.align-left {
+  text-align: left !important;
+}

@@ -49,24 +49,39 @@ const EIGenericTable = ({tabletitle,onReady,columnsDetails,itemToExportMapping})
     const fileType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
     const fileExtension = '.xlsx';
     const exportToCSV = (csvData, fileName) => {
-
-
-        var result = [];
-        csvData.map((val, i) => {
-
-
-           var item = itemToExportMapping(val);
-
-            result.push(item);
-
+        const result = [];
+        csvData.forEach((val) => {
+          const item = {};
+          columnsDetails.forEach((col) => {
+            item[col.Header] = val[col.accessor];
+          });
+          result.push(item);
         });
-
+      
+        // Create the worksheet
         const ws = XLSX.utils.json_to_sheet(result);
-        const wb = { Sheets: { 'data': ws }, SheetNames: ['data'] };
-        const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+      
+        // Apply custom styles for specific columns (e.g., left alignment for "Operator")
+        columnsDetails.forEach((col, index) => {
+          if (col.className === "align-left") {
+            const cellIndex = XLSX.utils.encode_col(index) + "1"; // e.g., "A1"
+            if (ws[cellIndex]) {
+              ws[cellIndex].s = {
+                alignment: { horizontal: "left" },
+              };
+            }
+          }
+        });
+      
+        // Create the workbook
+        const wb = { Sheets: { data: ws }, SheetNames: ["data"] };
+        const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+      
+        // Save the file
         const data = new Blob([excelBuffer], { type: fileType });
         FileSaver.saveAs(data, fileName + fileExtension);
-    }
+      };
+      
     const exportToPDF = () => {
 
       
@@ -141,7 +156,9 @@ const EIGenericTable = ({tabletitle,onReady,columnsDetails,itemToExportMapping})
                                                 {headerGroups.map((headerGroup) => (
                                                     <tr {...headerGroup.getHeaderGroupProps()}>
                                                         {headerGroup.headers.map((column) => (
-                                                            <th data-column={column.id} className={getLang() === "ar" ? "rtl" : "ltr"} {...column.getHeaderProps(column.getSortByToggleProps())}>
+                                                            <th
+                                                            data-column={column.id}
+                                                            className={`${getLang() === "ar" ? "rtl" : "ltr"} ${column.className || ""}`} {...column.getHeaderProps(column.getSortByToggleProps())}>
                                                                 {/* <span>
                                   {column.isSorted ? column.isSortedDesc ? " ↓" : " ↑" : ""}{" "}
                                 </span> */}
@@ -158,8 +175,11 @@ const EIGenericTable = ({tabletitle,onReady,columnsDetails,itemToExportMapping})
                                                         <tr className="socio-economic-tr strike-through"{...row.getRowProps()}>
                                                             {row.cells.map((cell) => {
                                                                 return (
-                                                                    <td data-column={cell.column.id} className={getLang() === "ar" ? "rtl" : "ltr"}  {...cell.getCellProps()}>
-                                                                        {cell.render("Cell")}
+                                                                    <td
+                                                                    data-column={cell.column.id}
+                                                                    className={`${getLang() === "ar" ? "rtl" : "ltr"} ${cell.column.className || ""}`}
+                                                                    {...cell.getCellProps()}
+                                                                    >   {cell.render("Cell")}
                                                                     </td>
                                                                 );
                                                             })}

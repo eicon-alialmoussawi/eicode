@@ -1,17 +1,21 @@
 import React, { useState, useEffect ,useRef} from "react";
 import { getValue } from "../Assets/Language/Entries";
 import { getLang } from "../utils/common";
-var  updatedItems=[] ;
+
 const ScrollableCheckboxList = ({
   data,
   onReady,
   labelName, // Name of the label field
-  idName, // Name of the id field (e.g., 'operatorId', 'countryId', etc.)
+  idName,
+  height = 80, // Name of the id field (e.g., 'operatorId', 'countryId', etc.)
 }) => {
   const [checkAll, setCheckAll] = useState(false);
   const [checkedItems, setCheckedItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); // State for the search term
   const [filteredData, setFilteredData] = useState(data); // State for the filtered data
+
+  var  updatedItems=[] ;
+ 
 
   // Update filtered data based on the search term
   useEffect(() => {
@@ -72,12 +76,18 @@ const ScrollableCheckboxList = ({
 
   // Provide the API with the current selected items
   const apiRef = useRef({
-    getSelectedValues: () => updatedItems, // Initially returns an empty array
+    getSelectedValues: () => checkedItems, 
+    setSelectedValues: (values) =>{
+      console.log(values);
+
+      setCheckedItems(values);
+    }// Initially returns an empty array
   });
 
   useEffect(() => {
+    apiRef.current.getSelectedValues = () => checkedItems;
     onReady(apiRef); // Notify parent component about the API once component is ready
-  }, []);
+  }, [checkedItems, onReady]);
 
   return (
     <div className="checkbox-list">
@@ -106,7 +116,7 @@ const ScrollableCheckboxList = ({
         </div>
 
       {/* Select All and Checkbox List */}
-      <div className="scrollable bs-scrollable" style={{ height: 80 }}>
+      <div className="scrollable bs-scrollable" style={{ height: `${height}px` }}>
         {/* Select All Checkbox */}
    
 
