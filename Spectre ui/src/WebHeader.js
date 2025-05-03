@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { getUser, removeUserSession, getLang } from "./utils/common";
 import { Link } from "react-router-dom";
 import APIFunctions from "./utils/APIFunctions";
-import Logo from "./Assets/Images/logo2.svg";
+import Logo from "./Assets/Images/SpectreXLogo.svg";
 import $ from "jquery";
 import { getValue } from "./Assets/Language/Entries";
 
@@ -240,6 +240,11 @@ export default class Header extends Component {
                           <li className="sub">
                             <Link to="/Test">
                               Test
+                            </Link>
+                          </li>
+                          <li className="sub">
+                            <Link to="/Map">
+                              Map
                             </Link>
                           </li>
                           <li className="sub">

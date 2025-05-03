@@ -2180,7 +2180,7 @@ namespace Spectre.API.Controllers
                     }
                     else
                     {
-                        TotalPriceP = item.UpFrontFees == null ? null : (double)item.UpFrontFees;
+                        TotalPriceP = item.UpFrontFees == null ? null : (double)item.UpFrontFees;//price_musd
                     }
                     item.Price = TotalPriceP;
                     item.PriceM = TotalPriceP;
@@ -2217,7 +2217,7 @@ namespace Spectre.API.Controllers
                         if (item.Pop != 0)
                             item.Price = item.Price / item.Pop;
                     }
-
+                    //////////////////////////////////////
                     double LicenseFactor = 0;
                     double Numerator = 0;
                     double Denominator = 0;
@@ -2238,11 +2238,12 @@ namespace Spectre.API.Controllers
                     }
                     LicenseFactor = Numerator / Denominator;
                     item.Price = item.Price * LicenseFactor;
-
+                    //license//
                     if (model.AdjustByInflationFactor)
                     {
                         item.Price = item.Price * item.InflationFactor;
                     }
+                    ////
                     if (model.AdjustByPPPFactor)
                     {
                         item.Price = item.Price * item.PPPFactor;
@@ -2260,6 +2261,7 @@ namespace Spectre.API.Controllers
                         if (GDPC != 0)
                             item.Price = item.Price / Decimal.ToDouble(GDPC);
                     }
+                    ///////////
                     if (model.UniqueAwards)
                     {
                         double value = 0;

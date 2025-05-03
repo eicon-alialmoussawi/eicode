@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\eicode\\Spectre ui\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\eicode\\Spectre ui\\src\\routes\\PrivateRoute.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes\\PrivateRoute.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\eicode\\Spectre ui\\src\\components\\AwardsMenuTest.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\AwardsMenuTest.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PrivateRoute.js",
+              "DocumentMoniker": "C:\\eicode\\Spectre ui\\src\\routes\\PrivateRoute.js",
+              "RelativeDocumentMoniker": "src\\routes\\PrivateRoute.js",
+              "ToolTip": "C:\\eicode\\Spectre ui\\src\\routes\\PrivateRoute.js",
+              "RelativeToolTip": "src\\routes\\PrivateRoute.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-16T11:43:17.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AwardsMenuTest.js",
               "DocumentMoniker": "C:\\eicode\\Spectre ui\\src\\components\\AwardsMenuTest.js",
               "RelativeDocumentMoniker": "src\\components\\AwardsMenuTest.js",
               "ToolTip": "C:\\eicode\\Spectre ui\\src\\components\\AwardsMenuTest.js",
               "RelativeToolTip": "src\\components\\AwardsMenuTest.js",
-              "ViewState": "AgIAANgDAAAAAAAAAAAvwO8DAAASAAAAAAAAAA==",
+              "ViewState": "AgIAANgDAAAAAAAAAAAvwOADAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-09-21T09:22:01.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Valuations.js",
               "DocumentMoniker": "C:\\eicode\\Spectre ui\\src\\components\\Valuations.js",
               "RelativeDocumentMoniker": "src\\components\\Valuations.js",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Awards.js",
               "DocumentMoniker": "C:\\eicode\\Spectre ui\\src\\components\\Awards.js",
               "RelativeDocumentMoniker": "src\\components\\Awards.js",

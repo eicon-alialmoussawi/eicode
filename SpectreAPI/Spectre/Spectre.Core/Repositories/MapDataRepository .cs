@@ -15,7 +15,7 @@ namespace Spectre.Core.Repositories
         private readonly ILogger logger;
         private readonly IConfiguration configuration;
 
-        public MapDataRepository(DbContext context, ILogger logger, IConfiguration configuration)
+        public MapDataRepository(SpectreDBContext context, ILogger logger, IConfiguration configuration)
             : base(context)
         {
             this.logger = logger;

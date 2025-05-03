@@ -354,6 +354,298 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BazAuctionController",
+    "Method": "GetById",
+    "RelativePath": "api/BazAuction/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazAuctionController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazAuction/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BazAwardController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazAwards/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BazAwardController",
+    "Method": "GetCountyAwardsCount",
+    "RelativePath": "api/BazAwards/GetCountyAwardsCount",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "view",
+        "Type": "Spectre.Core.Models.Extenders.BazAwardFilter_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BazAwardController",
+    "Method": "GetFilteredBazAwards",
+    "RelativePath": "api/BazAwards/GetFilteredBazAwards",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "view",
+        "Type": "Spectre.Core.Models.Extenders.BazAwardFilter_View",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.BazAwardController",
+    "Method": "GetFilteredBazAwardsForPricing",
+    "RelativePath": "api/BazAwards/GetFilteredBazAwardsForPricing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "view",
+        "Type": "Spectre.Core.Models.Extenders.BazAwardFilter_ViewForPricing",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazBandController",
+    "Method": "GetById",
+    "RelativePath": "api/BazBand/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazBandController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazBand/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazCountyController",
+    "Method": "GetById",
+    "RelativePath": "api/BazCounty/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazCountyController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazCounty/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazLicenseController",
+    "Method": "GetById",
+    "RelativePath": "api/BazLicense/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazLicenseController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazLicense/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketController",
+    "Method": "GetById",
+    "RelativePath": "api/BazMarket/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazMarket/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketClassController",
+    "Method": "GetById",
+    "RelativePath": "api/BazMarketClass/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketClassController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazMarketClass/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketDetailController",
+    "Method": "GetById",
+    "RelativePath": "api/BazMarketDetail/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazMarketDetailController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazMarketDetail/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazRegionController",
+    "Method": "GetById",
+    "RelativePath": "api/BazRegion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazRegionController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazRegion/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazStateController",
+    "Method": "GetById",
+    "RelativePath": "api/BazState/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BazStateController",
+    "Method": "GetAll",
+    "RelativePath": "api/BazState/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Spectre.API.Controllers.BenchmarkController",
     "Method": "Filter",
     "RelativePath": "api/Bnechmark/Filter",
@@ -1316,6 +1608,22 @@
     ]
   },
   {
+    "ContainingType": "Spectre.API.Controllers.MapDataController",
+    "Method": "GetJsonByName",
+    "RelativePath": "api/MapData/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Spectre.API.Controllers.NotificationController",
     "Method": "GetAll",
     "RelativePath": "api/Notifications/GetAll",
@@ -1391,6 +1699,74 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.OperatorController",
+    "Method": "GetAll",
+    "RelativePath": "api/Operator/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.OperatorController",
+    "Method": "GetById",
+    "RelativePath": "api/Operator/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.OperatorController",
+    "Method": "GetUserOperators",
+    "RelativePath": "api/Operator/GetUserOperators",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spectre.API.Controllers.OperatorController",
+    "Method": "Import",
+    "RelativePath": "api/Operator/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "operators",
+        "Type": "System.Collections.Generic.List\u00601[[Spectre.Core.Models.Operator, Spectre.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

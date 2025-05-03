@@ -77,6 +77,7 @@ import { getLang } from "./utils/common";
 import Regions from "./components/Regions";
 import EditRegion from "./components/EditRegion";
 import LoggedInLogs from "./components/LoggedInLogs";
+import BazUSAMap from "./components/BazUSAMap"
 
 function App() {
     // window.addEventListener("beforeunload", (ev) => {
@@ -118,6 +119,7 @@ function App() {
                             <UserRoute exact path="/Benchmark" component={Benchmark} />
                             <UserRoute exact path="/Default" component={Default} />
                             <UserRoute exact path="/Test" component={AwardBase} />
+                            <UserRoute exact path="/Map" component={BazUSAMap} />
                             <UserRoute
                                 exact path="/PublicSocioEconomics"
                                 component={PublicSocioEconomics}

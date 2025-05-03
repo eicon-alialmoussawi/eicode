@@ -207,6 +207,8 @@ export const displayPop = (Pop, isIMF) => {
       return _Pop;
 }
 
+export const SetArray = [];  // Or the actual definition of SetArray
+
 
 export const displayPricingPop = (Pop) => {
     if (Pop == null) 

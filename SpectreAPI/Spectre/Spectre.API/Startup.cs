@@ -70,6 +70,10 @@ namespace Spectre.API
             services.AddScoped<IScocioEconomicRepository, ScocioEconomicRepository>();
             services.AddScoped<IAwardRepository, AwardRepository>();
             services.AddScoped<IBazAwardRepository, BazAwardRepository>();
+            services.AddScoped<IBazMarketRepository, BazMarketRepository>();
+            services.AddScoped<IBazMarketDetailRepository, BazMarketDetailRepository>();
+            services.AddScoped<IBazBandRepository, BazBandRepository>();
+            services.AddScoped<IBazMarketClassRepository, BazMarketClassRepository>();
             services.AddScoped<IMapDataRepository, MapDataRepository>();
             services.AddTransient<ICountryRepository, CountryRepository>();
             services.AddTransient<IOperatorRepository, OperatorRepository>();

@@ -28,6 +28,11 @@ namespace Spectre.Core.Models
         public virtual DbSet<Award> Awards { get; set; }
         public virtual DbSet<BazAward> BazAwards { get; set; }
         public virtual DbSet<BazAuction> BazAuctions { get; set; }
+        public virtual DbSet<BazMarket> BazMarkets { get; set; }
+        public virtual DbSet<BazMarketClass> MarketClass { get; set; }
+        public virtual DbSet<BazMarketDetail> BazMarketDetails { get; set; }
+        public virtual DbSet<BazBand> BazBands { get; set; }
+        public virtual DbSet<MapData> MapDatas { get; set; }
         public virtual DbSet<BazRegion> BazRegions { get; set; }
         public virtual DbSet<BazCounty> BazCounties { get; set; }
         public virtual DbSet<BazLicense> BazLicense { get; set; }

@@ -18,6 +18,18 @@ const getUserPermissions = (PageUrl) => {
 const getAllBazAuctions = () => {
   return http.get("/BazAuction/GetAll");
 };
+const getAllBazRegions = () => {
+  return http.get("/BazRegion/GetAll");
+};
+const getAllBazLicense = () => {
+  return http.get("/BazLicense/GetAll");
+};
+const getAllBazStates = () => {
+  return http.get("/BazState/GetAll");
+};
+const getAllBazCounties = () => {
+  return http.get("/BazCounty/GetAll");
+};
 //BazAwards API
 const getAllBazAwards = () => {
   return http.get("/BazAwards/GetAllBazAwards");
@@ -609,7 +621,12 @@ const getOperators = () => {
 };
 
 
+
 const APIFunctions = {
+  getAllBazRegions,
+  getAllBazLicense,
+  getAllBazStates,
+  getAllBazCounties,
   getAllBazAuctions,
   getAllBazAwards,
   getFilteredBazAwards,

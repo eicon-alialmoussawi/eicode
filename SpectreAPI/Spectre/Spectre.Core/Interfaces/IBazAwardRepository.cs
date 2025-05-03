@@ -25,6 +25,8 @@ namespace Spectre.Core.Interfaces
             bool? AdjustByInflationFactor, bool? AdjustByGDPFactor, bool? AverageSumPricesAndMHZ);*/
 
         Task<Tuple<bool, List<BazAwardView>>> GetFilteredBazAwards(BazAwardFilter_View View);
+        Task<Tuple<bool, List<BazAwardViewForPricing>>> GetFilteredBazAwardsForPricing(BazAwardFilter_ViewForPricing View);
+        Task<Tuple<bool, List<CountyAwardData>>> GetCountyAwardsCountAsync(BazAwardFilter_View filter = null);
         //Task<Tuple<bool>> RemoveAllBazAwards();
         //Task<Tuple<bool>> SaveBazAward(BazAward bazAward);
 
