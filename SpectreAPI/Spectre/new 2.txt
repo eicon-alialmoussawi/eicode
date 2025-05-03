@@ -1,0 +1,154 @@
+import React from 'react';
+import { useTable, usePagination, useSortBy } from 'react-table';
+
+
+const GenericTable = ({ data, columns, numberOfAwards, pageCount, pageOptions,indexOfPage, canPreviousPage, canNextPage, gotoPage, previousPage, nextPage, getLang, setIsOpen }) => {
+    const {
+         getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow,
+        page, // Current page rows
+        state
+    } = useTable(
+        {
+            columns,
+            data,
+            initialState: { indexOfPage: 0 }, // Start from the first page
+        },
+        useSortBy,
+        usePagination
+    );
+
+    return (
+        <div className="section_wrapper mcb-section-inner">
+            <div className="wrap mcb-wrap one valign-top clearfix">
+                <div className="entry-content inner-entry-content px-4 py-3">
+                    <div className="row">
+                        <div className="col-12 text-left">
+                            <div className="row">
+                                <div className="col-12 text-left d-flex justify-content-between">
+                                    <h4 className="text-blue-d text-bold" style={{ margin: 0 }}>
+                                        {getLang("ListOfAwards")}
+                                    </h4>
+                                    <div className="tbl-actions">
+                                        <button disabled className="btn"><i className="fa fa-refresh"></i></button>
+                                        <button disabled className="btn"><i className="fa fa-chart-line"></i></button>
+                                        <button
+                                            disabled={data.length === 0}
+                                            className={data.length > 0 ? "btn chart-btn-color" : "btn"}
+                                            onClick={() => setIsOpen(true)}
+                                        >
+                                            <i className="fa fa-download"></i>
+                                        </button>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style={{ margin: "5px 0" }} />
+                        </div>
+                    </div>
+                    <h6 className="fw-bold fs-14px" style={{ display: numberOfAwards === 0 ? "none" : "" }}>
+                        {getLang("NumberOfAwards")}: {numberOfAwards}
+                    </h6>
+                    <div className="col-md-12 list p-0 mb-3 custom-scrollbar">
+                        <table className="table table-width-auto fs-12px" role="table" id="table-to-xls" {...getTableProps()}>
+                            <thead>
+                                {headerGroups.map((headerGroup) => (
+                                    <tr {...headerGroup.getHeaderGroupProps()}>
+                                        {headerGroup.headers.map((column) => (
+                                            <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                                                {column.render("Header")}
+                                                {/* Sorting icons */}
+                                                {column.isSorted
+                                                    ? column.isSortedDesc
+                                                        ? " ↓"
+                                                        : " ↑"
+                                                    : ""}
+                                            </th>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </thead>
+                            <tbody {...getTableBodyProps()}>
+                                {page.map((row, i) => {
+                                    prepareRow(row);
+                                    return (
+                                        <tr {...row.getRowProps()}>
+                                            {row.cells.map((cell) => {
+                                                return (
+                                                    <td {...cell.getCellProps()}>
+                                                        {cell.render("Cell")}
+                                                    </td>
+                                                );
+                                            })}
+                                        </tr>
+                                    );
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="row" id="tableRow">
+                        <div className="col-md-6 d-flex align-items-start">
+                            <span className="text-black">
+                                {getLang("Page")} <strong>{pageOptions.length !== 0 ? indexOfPage + 1 : 0} {getLang("Of")} {pageOptions.length}</strong>
+                            </span>
+                            <span className="text-black d-flex ml-1 mr-1 align-items-start">
+                                | {getLang("GoToPage")}
+                                <input
+                                    type="number"
+                                    min="1"
+                                    max={pageOptions.length}
+                                    defaultValue={indexOfPage + 1}
+                                    onChange={(e) => {
+                                        const pageNumber = e.target.value ? Number(e.target.value) - 1 : 0;
+                                        gotoPage(pageNumber);
+                                    }}
+                                    style={{
+                                        width: "50px",
+                                        height: "25px",
+                                        borderBottom: 0,
+                                    }}
+                                    className="cstm-input ml-1"
+                                />
+                            </span>
+                        </div>
+                        <div className="col-6 d-flex justify-content-end">
+                            <button
+                                className="btn inner-btn-secondary px-5px py-0 me-1"
+                                onClick={() => gotoPage(0)}
+                                disabled={!canPreviousPage}
+                            >
+                                {"<<"}
+                            </button>
+                            <button
+                                className="btn inner-btn-secondary px-5px py-0 me-1"
+                                onClick={() => previousPage()}
+                                disabled={!canPreviousPage}
+                            >
+                                {getLang("Previous")}
+                            </button>
+                            <button
+                                className="btn inner-btn-secondary px-5px py-0 me-1"
+                                onClick={() => nextPage()}
+                                disabled={!canNextPage}
+                            >
+                                {getLang("Next")}
+                            </button>
+                            <button
+                                className="btn inner-btn-secondary px-5px py-0 me-1"
+                                onClick={() => gotoPage(pageCount - 1)}
+                                disabled={!canNextPage}
+                            >
+                                {">>"}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default GenericTable;

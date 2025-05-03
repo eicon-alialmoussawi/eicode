@@ -1,49 +1,346 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\",
+  "WorkspaceRootPath": "C:\\eicode\\SpectreAPI\\Spectre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazawardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazawardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\extenders\\bazawardfilter_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\extenders\\bazawardfilter_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazauctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazauctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\extenders\\bazawardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\extenders\\bazawardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\awardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\awardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\extenders\\pricingfilterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\extenders\\pricingfilterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\awardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\awardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\iawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\iawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazawardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazmarketclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazmarketclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazaward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazaward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazmarketclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazmarketclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazmarketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazmarketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazmarketclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazmarketclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\spectredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\spectredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazmarketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazmarketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazmarketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazmarketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazbandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazbandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazmarketclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazmarketclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazband.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazband.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazmarketdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazmarketdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazmarketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazmarketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazmarket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazmarket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazmarketdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazmarketdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazbandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazbandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\socioeonomicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\socioeonomicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\extenders\\failedimportedawards_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\extenders\\failedimportedawards_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\mapdatarepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\mapdatarepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\mapdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\mapdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\countyawarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\countyawarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\mapdatacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\mapdatacontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazregioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazregioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazcountyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazcountyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\imapdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\imapdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\migrations\\20241109190053_createoperatortable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\migrations\\20241109190053_createoperatortable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ioperatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ioperatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m4tech\\AppData\\Local\\Temp\\4e886c05-c333-41a3-a193-032c43c14e93_SpectreUI.zip.e93\\Spectre ui\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazlicensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazlicensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazcountycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazcountycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazlicenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazlicenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazlicenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazlicenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazcounty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazcounty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazcountyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazcountyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\bazstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\bazstatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazstaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazstaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazstaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazstaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\bazauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\bazauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazauctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\packagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\packagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\publiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\operatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\operatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\operatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\operatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazauction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\ibazentityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\ibazentityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\bazentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\bazentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\extenders\\awardsfilterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\extenders\\awardsfilterbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\404a25c2d4cde43d8a083acfd76aa93b99e1ebed12fded7abcc037bb797cfcfa\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\13603bdbab1421ca58198ad23a4d44f62d398c16b7ce645d8195131bc5d71250\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\models\\operator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\models\\operator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\jwtauthentication\\addauthheaderoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\jwtauthentication\\addauthheaderoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\.config\\dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Spectre.API\\.config\\dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\migrations\\spectredbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\migrations\\spectredbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\views\\website\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\views\\website\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\wwwroot\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\wwwroot\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.core\\spectre.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\interfaces\\icountryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\interfaces\\icountryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\spectre.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\spectre.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\spectre.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}",
+      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.api\\spectre.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}",
       "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\spectre.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.core\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|c:\\eicode\\spectreapi\\spectre\\spectre.core\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A03800E1-3C2D-4901-844A-AF4739ABF24D}|Spectre.Core\\Spectre.Core.csproj|solutionrelative:spectre.core\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|c:\\eicon\\spectre\\spectre\\spectre_code_version_eicon_030624\\spectre_code_eicon\\spectreapi\\spectre\\spectre.api\\controllers\\awardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF317CA3-0C8D-449D-A056-70B0A66B0D8E}|Spectre.API\\Spectre.API.csproj|solutionrelative:spectre.api\\controllers\\awardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,80 +350,1002 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Spectre.API\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAlwDQAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "IBazAwardRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazAwardRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazAwardRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazAwardRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazAwardRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwBoAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:05:07.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T17:36:23.207Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BazAwardFilter_View.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\BazAwardFilter_View.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Extenders\\BazAwardFilter_View.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\BazAwardFilter_View.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Extenders\\BazAwardFilter_View.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:11:44.349Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BazAward.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazAward.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazAward.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazAward.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazAward.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T15:34:39.636Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAwardRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IAwardRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IAwardRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IAwardRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IAwardRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:34:00.532Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AwardRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\AwardRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\AwardRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\AwardRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\AwardRepository.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAAApwEUBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:35:08.912Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BazAwardController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazAwardController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazAwardController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazAwardController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazAwardController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAlwFEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:42:58.796Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AwardController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\AwardController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\AwardController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\AwardController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\AwardController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAswBACAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:36:49.99Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BazState.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazState.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazState.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazState.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:03:57.837Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IBazRegionRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazRegionRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazRegionRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazRegionRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazRegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:18:33.816Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IOperatorRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IOperatorRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IOperatorRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IOperatorRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IOperatorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:56:37.992Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BazAuctionController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazAuctionController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazAuctionController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazAuctionController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazAuctionController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:40:10.948Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "BazCounty.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazCounty.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazCounty.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazCounty.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazCounty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:03:05.401Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BazLicense.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazLicense.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazLicense.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazLicense.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazLicense.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:58:18.296Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PricingFilterBody.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\PricingFilterBody.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Extenders\\PricingFilterBody.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\PricingFilterBody.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Extenders\\PricingFilterBody.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T19:32:06.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BazAwardView.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\BazAwardView.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Extenders\\BazAwardView.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\BazAwardView.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Extenders\\BazAwardView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T18:59:54.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BazAwardRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazAwardRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazAwardRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazAwardRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazAwardRepository.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:40:37.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BazMarketClassRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketClassRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazMarketClassRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketClassRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazMarketClassRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:25:12.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IBazMarketClassRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketClassRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazMarketClassRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketClassRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazMarketClassRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:23:43.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BazMarketClassController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazMarketClassController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazMarketClassController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazMarketClassController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazMarketClassController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:33:28.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BazMarketClass.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarketClass.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazMarketClass.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarketClass.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazMarketClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:22:16.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BazBand.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazBand.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazBand.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazBand.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazBand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:21:38.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BazBandRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazBandRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazBandRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazBandRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazBandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:21:27.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Startup.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "RelativeToolTip": "Spectre.API\\Startup.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAiwEsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:00:43.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FailedImportedAwards_View.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\FailedImportedAwards_View.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Extenders\\FailedImportedAwards_View.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\FailedImportedAwards_View.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Extenders\\FailedImportedAwards_View.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T12:08:15.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SpectreDBContext.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\SpectreDBContext.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\SpectreDBContext.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\SpectreDBContext.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\SpectreDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:03:08.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BazMarketController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazMarketController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazMarketController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazMarketController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazMarketController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:55:51.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BazMarket.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarket.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazMarket.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarket.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazMarket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T13:03:10.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BazMarketRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazMarketRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazMarketRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:57:12.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BazMarketDetail.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarketDetail.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazMarketDetail.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazMarketDetail.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazMarketDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T13:34:10.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IBazMarketRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazMarketRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazMarketRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:55:45.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BazMarketDetailRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketDetailRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazMarketDetailRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazMarketDetailRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazMarketDetailRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T13:34:27.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MapDataRepository .cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\MapDataRepository .cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\MapDataRepository .cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\MapDataRepository .cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\MapDataRepository .cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAawA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:24:30.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SocioEonomicsController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\SocioEonomicsController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\SocioEonomicsController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\SocioEonomicsController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\SocioEonomicsController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAA/wGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T10:07:14.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IBazMarketDetailRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketDetailRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazMarketDetailRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazMarketDetailRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazMarketDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T11:55:25.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IMapDataRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IMapDataRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IMapDataRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IMapDataRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IMapDataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:21:31.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MapData.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\MapData.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\MapData.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\MapData.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\MapData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:12:26.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BazCountyRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazCountyRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazCountyRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazCountyRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazCountyRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:23:18.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IBazBandRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazBandRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazBandRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazBandRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazBandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T11:55:23.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CountryRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\CountryRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\CountryRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\CountryRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\CountryRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAlwEAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:58:59.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Program.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "RelativeToolTip": "Spectre.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T03:58:50.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\m4tech\\AppData\\Local\\Temp\\4e886c05-c333-41a3-a193-032c43c14e93_SpectreUI.zip.e93\\Spectre ui\\package.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\Temp\\4e886c05-c333-41a3-a193-032c43c14e93_SpectreUI.zip.e93\\Spectre ui\\package.json",
+              "ToolTip": "C:\\Users\\m4tech\\AppData\\Local\\Temp\\4e886c05-c333-41a3-a193-032c43c14e93_SpectreUI.zip.e93\\Spectre ui\\package.json [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\Temp\\4e886c05-c333-41a3-a193-032c43c14e93_SpectreUI.zip.e93\\Spectre ui\\package.json [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-18T16:30:15.588Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MapDataController .cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\MapDataController .cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\MapDataController .cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\MapDataController .cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\MapDataController .cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T19:39:24.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CountyAwardData.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\CountyAwardData.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\CountyAwardData.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\CountyAwardData.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\CountyAwardData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:33:34.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BazRegionController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazRegionController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazRegionController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazRegionController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazRegionController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:36:34.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IBazStateRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazStateRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazStateRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazStateRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazStateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:18:28.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IBazLicenseRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazLicenseRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazLicenseRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazLicenseRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazLicenseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:01:15.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20241109190053_CreateOperatorTable.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Migrations\\20241109190053_CreateOperatorTable.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Migrations\\20241109190053_CreateOperatorTable.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Migrations\\20241109190053_CreateOperatorTable.cs",
+              "RelativeToolTip": "Spectre.Core\\Migrations\\20241109190053_CreateOperatorTable.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:02:01.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BazLicenseRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazLicenseRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazLicenseRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazLicenseRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazLicenseRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:03:02.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BazLicenseController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazLicenseController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazLicenseController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazLicenseController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazLicenseController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:10:02.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BazCountyController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazCountyController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazCountyController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazCountyController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazCountyController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:37:23.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "BazRegionRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazRegionRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazRegionRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazRegionRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazRegionRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:22:34.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "BazStateRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazStateRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazStateRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazStateRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazStateRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:24:40.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BazStateController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazStateController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\BazStateController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\BazStateController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\BazStateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:37:04.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IBazCountyRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazCountyRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazCountyRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazCountyRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazCountyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:19:16.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PackageRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\PackageRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\PackageRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\PackageRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\PackageRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAApwEIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:02:49.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PublicController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\PublicController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\PublicController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\PublicController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\PublicController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAlwEEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:02:42.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BazAuctionRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazAuctionRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\BazAuctionRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\BazAuctionRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\BazAuctionRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:22:54.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IBazAuctionRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazAuctionRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazAuctionRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazAuctionRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazAuctionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:21:36.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "BazAuction.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazAuction.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazAuction.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazAuction.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazAuction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:20:24.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "OperatorRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\OperatorRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\OperatorRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\OperatorRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\OperatorRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:01:00.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "OperatorController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\OperatorController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\OperatorController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\OperatorController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\OperatorController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:53:19.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "BazRegion.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazRegion.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazRegion.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazRegion.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazRegion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:02:00.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IBazEntityRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazEntityRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IBazEntityRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IBazEntityRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IBazEntityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:45:43.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "BazEntity.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazEntity.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\BazEntity.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\BazEntity.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\BazEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:43:11.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Spectre.Core\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:39:53.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:38:46.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AwardsFilterBody.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\AwardsFilterBody.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Extenders\\AwardsFilterBody.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Extenders\\AwardsFilterBody.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Extenders\\AwardsFilterBody.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T09:17:21.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AddAuthHeaderOperationFilter.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\JwtAuthentication\\AddAuthHeaderOperationFilter.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\JwtAuthentication\\AddAuthHeaderOperationFilter.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\JwtAuthentication\\AddAuthHeaderOperationFilter.cs",
+              "RelativeToolTip": "Spectre.API\\JwtAuthentication\\AddAuthHeaderOperationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T20:11:26.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Award.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Award.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Award.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Award.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Award.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T07:56:14.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\404a25c2d4cde43d8a083acfd76aa93b99e1ebed12fded7abcc037bb797cfcfa\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\SourceServer\\404a25c2d4cde43d8a083acfd76aa93b99e1ebed12fded7abcc037bb797cfcfa\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\404a25c2d4cde43d8a083acfd76aa93b99e1ebed12fded7abcc037bb797cfcfa\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\SourceServer\\404a25c2d4cde43d8a083acfd76aa93b99e1ebed12fded7abcc037bb797cfcfa\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwEcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:55:32.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Operator.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Operator.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Models\\Operator.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Models\\Operator.cs",
+              "RelativeToolTip": "Spectre.Core\\Models\\Operator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:57:24.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\13603bdbab1421ca58198ad23a4d44f62d398c16b7ce645d8195131bc5d71250\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\SourceServer\\13603bdbab1421ca58198ad23a4d44f62d398c16b7ce645d8195131bc5d71250\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "ToolTip": "C:\\Users\\m4tech\\AppData\\Local\\SourceServer\\13603bdbab1421ca58198ad23a4d44f62d398c16b7ce645d8195131bc5d71250\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\m4tech\\AppData\\Local\\SourceServer\\13603bdbab1421ca58198ad23a4d44f62d398c16b7ce645d8195131bc5d71250\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T20:25:53.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Spectre.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Spectre.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T18:31:17.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "dotnet-tools.json",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\.config\\dotnet-tools.json",
+              "RelativeDocumentMoniker": "Spectre.API\\.config\\dotnet-tools.json",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\.config\\dotnet-tools.json",
+              "RelativeToolTip": "Spectre.API\\.config\\dotnet-tools.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T18:52:04.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SpectreDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Migrations\\SpectreDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Migrations\\SpectreDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Migrations\\SpectreDBContextModelSnapshot.cs",
+              "RelativeToolTip": "Spectre.Core\\Migrations\\SpectreDBContextModelSnapshot.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:45:47.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Spectre.API\\appsettings.Development.json",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.Development.json",
+              "RelativeToolTip": "Spectre.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T17:40:31.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.json",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.json",
               "RelativeDocumentMoniker": "Spectre.API\\appsettings.json",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.json",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\appsettings.json",
               "RelativeToolTip": "Spectre.API\\appsettings.json",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAtwCEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvx4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-20T17:01:52.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
-              "RelativeDocumentMoniker": "Spectre.API\\Startup.cs",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Startup.cs",
-              "RelativeToolTip": "Spectre.API\\Startup.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAQwIgAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 77,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\wwwroot\\web.config",
+              "RelativeDocumentMoniker": "Spectre.API\\wwwroot\\web.config",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\wwwroot\\web.config",
+              "RelativeToolTip": "Spectre.API\\wwwroot\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-09T17:30:53.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\CountryController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\CountryController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T17:00:43.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T15:48:28.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Views\\Website\\index.cshtml",
-              "RelativeDocumentMoniker": "Spectre.API\\Views\\Website\\index.cshtml",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Views\\Website\\index.cshtml",
-              "RelativeToolTip": "Spectre.API\\Views\\Website\\index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T16:41:53.122Z"
+              "DocumentIndex": 78,
+              "Title": "ICountryRepository.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\ICountryRepository.cs",
+              "RelativeDocumentMoniker": "Spectre.Core\\Interfaces\\ICountryRepository.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Interfaces\\ICountryRepository.cs",
+              "RelativeToolTip": "Spectre.Core\\Interfaces\\ICountryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:54:44.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 83,
               "Title": "Spectre.API",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
               "RelativeDocumentMoniker": "Spectre.API\\Spectre.API.csproj",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Spectre.API.csproj",
               "RelativeToolTip": "Spectre.API\\Spectre.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-09-20T03:58:50.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 82,
               "Title": "Spectre.Core.csproj",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
               "RelativeDocumentMoniker": "Spectre.Core\\Spectre.Core.csproj",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Spectre.Core.csproj",
               "RelativeToolTip": "Spectre.Core\\Spectre.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -134,63 +1353,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
-              "RelativeDocumentMoniker": "Spectre.API\\Program.cs",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Program.cs",
-              "RelativeToolTip": "Spectre.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAYwA8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T03:58:50.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 80,
               "Title": "UtilityController.cs",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\UtilityController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\UtilityController.cs",
               "RelativeDocumentMoniker": "Spectre.API\\Controllers\\UtilityController.cs",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\UtilityController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\UtilityController.cs",
               "RelativeToolTip": "Spectre.API\\Controllers\\UtilityController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T03:58:50.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 81,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Spectre.API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAlwDQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T08:05:07.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-09-17T19:53:59.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 85,
               "Title": "FolderProfile.pubxml",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "DocumentMoniker": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
               "RelativeDocumentMoniker": "Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ToolTip": "C:\\eicode\\SpectreAPI\\Spectre\\Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
               "RelativeToolTip": "Spectre.Core\\Properties\\PublishProfiles\\FolderProfile.pubxml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-09-20T03:58:50.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AwardController.cs",
-              "DocumentMoniker": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\AwardController.cs",
-              "RelativeDocumentMoniker": "Spectre.API\\Controllers\\AwardController.cs",
-              "ToolTip": "C:\\Eicon\\SPECTRE\\SPECTRE\\Spectre_code_version_eicon_030624\\Spectre_code_eicon\\SpectreAPI\\Spectre\\Spectre.API\\Controllers\\AwardController.cs",
-              "RelativeToolTip": "Spectre.API\\Controllers\\AwardController.cs",
-              "ViewState": "AQIAAP4CAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T03:58:50.793Z"
             }
           ]
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spectre.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f53777838bdb5cb2806b36a2b2cddc1abd0f8443")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fd5be5cf3576fccef8c597314837bae925cd07b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spectre.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spectre.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
